@@ -47,6 +47,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       <a routerLink="/" routerLinkActive="active">About</a>
       <a routerLink="/defer-when-condition" routerLinkActive="active">when condition</a>
       <a routerLink="/defer-on-hover" routerLinkActive="active">on hover</a>
+      more to come...
     </nav>
     <router-outlet></router-outlet>
   `
