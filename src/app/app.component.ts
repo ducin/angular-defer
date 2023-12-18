@@ -41,7 +41,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     }
   `,
   template: `
-    <h1 class="gradient-text"> Angular Defer Usecases</h1>
+    <h1 class="gradient-text"> Angular ⚡️ <code>&#64;defer</code> ⚡️ Live Examples</h1>
     <section>by Tomasz Ducin, <a href="http://ducin.it/">ducin.it</a>, <a href="https://twitter.com/tomasz_ducin">&#64;tomasz_ducin</a></section>
     <nav>
       <a routerLink="/" routerLinkActive="active">About</a>

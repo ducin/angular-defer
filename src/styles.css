@@ -14,10 +14,8 @@ a {
 }
 
 code {
-  font-size: 14px;
   margin-bottom: 20px;
   background: -webkit-linear-gradient(var(--angle),var(--orange-red) 0%,var(--vivid-pink) 50%,var(--electric-violet) 100%);
-  /* background-image: -webkit-linear-gradient(var(--angle),var(--orange-red) 0%,var(--vivid-pink) 50%,var(--electric-violet) 100%); */
 
   -webkit-background-clip: text;
   -moz-background-clip: text;
