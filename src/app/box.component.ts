@@ -8,12 +8,13 @@ import { CommonModule } from '@angular/common';
   styles: `
     :host {
       display: block;
-      max-width: 50%;
-      border: 1px solid #000;
+      max-width: 75%;
+      border: 1px solid var(--electric-violet);
       padding: 10px;
-      background-color: #f2f2f2;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      border-radius: 4px;
+      background-color: color-mix(in srgb, var(--electric-violet) 10%, white);
+      border-radius: 6px;
+      box-shadow: 3px 3px 5px var(--electric-violet);
+      margin: 10px;
     }
   `,
   template: `

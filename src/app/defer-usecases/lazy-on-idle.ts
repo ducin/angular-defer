@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lazy-when-condition',
+  selector: 'lazy-on-idle',
   standalone: true,
   template: `
-    <h2>lazy-when-condition</h2>
+    <h2>lazy-on-idle</h2>
     <ng-content></ng-content>
   `,
 })
-export class LazyWhenConditionComponent {
+export class LazyOnIdleComponent {
 }

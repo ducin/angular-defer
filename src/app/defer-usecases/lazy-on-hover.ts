@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'lazy-on-hover',
   standalone: true,
   template: `
-    <h1>lazy-on-hover</h1>
+    <h2>lazy-on-hover</h2>
     <ng-content></ng-content>
   `,
 })
