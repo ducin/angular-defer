@@ -24,10 +24,12 @@ import { LoaderComponent } from './defer-usecases/loader';
         </ul></li>
         <li>Each routed component: <ul>
           <li>is statically imported on router level</li>
-          <li>includes 3 elements in a <code>&#64;defer</code> block: <code>&#64;defer</code> block: <ol>
+          <li>includes following elements in a <code>&#64;defer</code> block: <code>&#64;defer</code> block: <ol>
             <li>its <strong>dedicated</strong> (separate) lazy loaded component (each example has its own, not shared across sections)</li>
-            <li>a <strong>shared</strong> component (will get lazy loaded only the first time</li>
+            <li>a <strong>shared</strong> component</li>
             <li>a non-standalone component (belongs to an NgModule) which won't get lazy loaded at all (lazy loading works only for <strong>standalone</strong> components</li>
+            <li>a lazy loaded, <strong>shared</strong> fLiPcAsE pipe</li>
+            (shared items are single instance, loaded over the newtork only for the first time, later reused)
           </ol></li>
           <li>uses the following spinner within the <code>&#64;loading</code>: <div><loader/></div></li>
         </ul></li>

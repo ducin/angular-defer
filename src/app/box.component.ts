@@ -9,12 +9,12 @@ import { CommonModule } from '@angular/common';
     :host {
       display: block;
       max-width: 75%;
-      border: 1px solid var(--electric-violet);
-      padding: 10px;
-      background-color: color-mix(in srgb, var(--electric-violet) 10%, white);
-      border-radius: 6px;
-      box-shadow: 3px 3px 5px var(--electric-violet);
       margin: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      background-color: var(--main-background-color);
+      border: 1px solid var(--main-accent-color);
+      box-shadow: 3px 3px 5px var(--main-accent-color);
     }
   `,
   template: `

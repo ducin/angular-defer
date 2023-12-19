@@ -6,14 +6,16 @@ import { LoaderComponent } from './loader';
 import { BoxComponent } from '../box.component';
 import { LazySharedComponent } from './lazy-shared';
 import { LegacyModule } from './legacy/legacy.module';
+import { StUpIdCaSePipe } from './stupid-case-pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @Component({
   selector: 'defer-when-condition',
   standalone: true,
-  imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, LazyWhenConditionComponent, LazySharedComponent],
+  imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, LazyWhenConditionComponent, LazySharedComponent, StUpIdCaSePipe, HighlightDirective],
   template: `
     <app-box>
-      <content>when checked, the <code>&#64;defer (when isVisible)</code> condition will switch to true</content>
+      <content>when checked, the <code>&#64;defer (when isVisible)</code> condition will switch to true.</content>
       <div>
         <label>
           <input type="checkbox" [(ngModel)]="isVisible" />
@@ -38,6 +40,12 @@ import { LegacyModule } from './legacy/legacy.module';
           some <code>&#64;defer (when isVisible)</code> content
         </article>
       </non-standalone>
+
+      <h2>pipe</h2>
+      {{ "Lazy loaded pipe here" | StUpIdCaSe }}
+
+      <h2>directive</h2>
+      <div highlight>lazy loaded directive - I'm highlighted lol 🥹</div>
     } @placeholder (minimum 500ms) {
       placeholder is shown before <code>&#64;defer</code> is triggered
     } @loading (after 100ms; minimum 1s) {

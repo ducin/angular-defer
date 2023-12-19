@@ -7,6 +7,7 @@ import { DeferOnInteractionComponent } from './defer-usecases/defer-on-interacti
 import { DeferOnHoverComponent } from './defer-usecases/defer-on-hover';
 import { DeferOnTimerComponent } from './defer-usecases/defer-on-timer';
 import { DeferOnImmediateComponent } from './defer-usecases/defer-on-immediate';
+import { DeferNestedComponent } from './defer-usecases/defer-nested';
 
 export const routes: Routes = [{
   path: 'about',
@@ -32,6 +33,9 @@ export const routes: Routes = [{
 }, {
   path: 'defer-on-timer',
   component: DeferOnTimerComponent,
+}, {
+  path: 'defer-nested',
+  component: DeferNestedComponent,
 }, {
   path: '',
   redirectTo: 'about',

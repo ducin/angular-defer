@@ -13,7 +13,6 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     h1 {
       font-size: 24px;
       margin-bottom: 20px;
-      background: -webkit-linear-gradient(var(--angle),var(--orange-red) 0%,var(--vivid-pink) 50%,var(--electric-violet) 100%);
       background-size: 100%;
       -webkit-background-clip: text;
       -moz-background-clip: text;
@@ -32,11 +31,16 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       margin-right: 10px;
     }
 
-    section a {
-      color: var(--electric-violet);
+    nav a:hover {
+      background: -webkit-linear-gradient(var(--angle),var(--orange-red) 0%,var(--electric-violet) 50%,var(--vivid-pink) 100%);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-text-fill-color: transparent;
     }
 
-    a.active {
+    nav a.active {
       font-weight: bold;
       background: -webkit-linear-gradient(var(--angle),var(--orange-red) 0%,var(--vivid-pink) 50%,var(--electric-violet) 100%);
       background-size: 100%;
@@ -47,7 +51,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     }
   `,
   template: `
-    <h1> Angular ⚡️ <code>&#64;defer</code> ⚡️ Live Examples</h1>
+    <h1 class="angular-gradient"> Angular ⚡️ <code>&#64;defer</code> ⚡️ Live Examples</h1>
     <section><strong>author</strong>: by Tomasz Ducin, <a href="http://ducin.it/">ducin.it</a>, <a href="https://twitter.com/tomasz_ducin">&#64;tomasz_ducin</a>, see this <a href="https://github.com/ducin/angular-defer">github repo</a></section>
     <section><strong>documentation</strong>: <a href="https://angular.dev/guide/defer">official docs</a>, <a href="https://angular.io/guide/defer">legacy docs</a></section>
     <nav>
@@ -59,6 +63,10 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       <a routerLink="/defer-on-hover" routerLinkActive="active">⚡️ on hover</a>
       <a routerLink="/defer-on-immediate" routerLinkActive="active">⚡️ on immediate</a>
       <a routerLink="/defer-on-timer" routerLinkActive="active">⚡️ on timer</a>
+
+    </nav>
+    <nav>
+      <a routerLink="/defer-nested" routerLinkActive="active">⚡️ nested defer</a>
     </nav>
     <router-outlet></router-outlet>
   `

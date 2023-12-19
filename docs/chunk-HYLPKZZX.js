@@ -1,0 +1,1 @@
+import{X as n}from"./chunk-5VUFFK74.js";function a(e){return[...e].map((t,i)=>i%2==0?t.toUpperCase():t.toLowerCase()).join("")}var s=(()=>{let t=class t{transform(r){return a(r)}};t.\u0275fac=function(o){return new(o||t)},t.\u0275pipe=n({name:"StUpIdCaSe",type:t,pure:!0,standalone:!0});let e=t;return e})();export{s as StUpIdCaSePipe};
