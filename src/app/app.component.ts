@@ -65,6 +65,9 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       <section>Open Browser Devtools <em>Network</em> tab.</section>
     </header>
     <nav>
+      <a routerLink="/about" routerLinkActive="active">💡 about this app</a>
+      <a routerLink="/defer-guide" routerLinkActive="active">📚 defer guide</a>
+      <br />
       <a routerLink="/defer-when-condition" routerLinkActive="active">⚡️ when condition</a>
       <a routerLink="/defer-on-idle" routerLinkActive="active">⚡️ on idle</a>
       <a routerLink="/defer-on-viewport" routerLinkActive="active">⚡️ on viewport</a>
@@ -73,13 +76,11 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       <a routerLink="/defer-on-immediate" routerLinkActive="active">⚡️ on immediate</a>
       <a routerLink="/defer-on-timer" routerLinkActive="active">⚡️ on timer</a>
       <br />
+      <a routerLink="/defer-multiple" routerLinkActive="active">👫 multiple deferrable</a>
       <a routerLink="/defer-nested" routerLinkActive="active">📦 nested defer</a>
       <a routerLink="/defer-prefetch" routerLinkActive="active">⏱️ prefetch</a>
       <a routerLink="/defer-loading-vs-placeholder" routerLinkActive="active">🚚 loading vs placeholder</a>
       <a routerLink="/defer-error" routerLinkActive="active">💥 defer error</a>
-      <br />
-      <a routerLink="/defer-guide" routerLinkActive="active">📚 defer guide</a>
-      <a routerLink="/about" routerLinkActive="active">💡 about this app</a>
     </nav>
     <router-outlet></router-outlet>
   `

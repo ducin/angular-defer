@@ -11,7 +11,8 @@ import { DeferNestedComponent } from './defer-usecases/defer-nested';
 import { DeferLoadingVsPlaceholderComponent } from './defer-usecases/defer-loading-vs-placeholder';
 import { DeferErrorComponent } from './defer-usecases/defer-error';
 import { DeferPrefetchComponent } from './defer-usecases/defer-prefetch';
-import { DeferGuideComponent } from './defer.component';
+import { DeferGuideComponent } from './defer-guide.component';
+import { DeferMultipleComponent } from './defer-usecases/defer-multiple';
 
 export const routes: Routes = [{
   path: 'about',
@@ -37,6 +38,9 @@ export const routes: Routes = [{
 }, {
   path: 'defer-on-timer',
   component: DeferOnTimerComponent,
+}, {
+  path: 'defer-multiple',
+  component: DeferMultipleComponent,
 }, {
   path: 'defer-nested',
   component: DeferNestedComponent,
