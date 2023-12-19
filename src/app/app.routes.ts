@@ -14,6 +14,7 @@ import { DeferPrefetchComponent } from './defer-usecases/defer-prefetch';
 import { DeferGuideComponent } from './defer-guide.component';
 import { DeferMultipleComponent } from './defer-usecases/defer-multiple';
 import { DeferNPMPackageComponent } from './defer-usecases/defer-npm-package';
+import { DeferAccordionComponent } from './defer-usecases/defer-accordion';
 
 export const routes: Routes = [{
   path: 'about',
@@ -39,6 +40,9 @@ export const routes: Routes = [{
 }, {
   path: 'defer-on-timer',
   component: DeferOnTimerComponent,
+}, {
+  path: 'defer-accordion',
+  component: DeferAccordionComponent,
 }, {
   path: 'defer-multiple',
   component: DeferMultipleComponent,

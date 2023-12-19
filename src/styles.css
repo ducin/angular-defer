@@ -9,6 +9,7 @@
 
     --main-accent-color: var(--electric-violet);
     --main-background-color: color-mix(in srgb, var(--electric-violet) 10%, white);
+    --secondary-background-color: color-mix(in srgb, var(--electric-violet) 30%, white);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -22,6 +23,7 @@
 
     --main-accent-color: var(--vivid-pink);
     --main-background-color: color-mix(in srgb, var(--electric-violet) 30%, black);
+    --secondary-background-color: color-mix(in srgb, var(--electric-violet) 60%, black);
   }
 }
 
