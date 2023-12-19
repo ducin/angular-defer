@@ -13,6 +13,7 @@ import { DeferErrorComponent } from './defer-usecases/defer-error';
 import { DeferPrefetchComponent } from './defer-usecases/defer-prefetch';
 import { DeferGuideComponent } from './defer-guide.component';
 import { DeferMultipleComponent } from './defer-usecases/defer-multiple';
+import { DeferNPMPackageComponent } from './defer-usecases/defer-npm-package';
 
 export const routes: Routes = [{
   path: 'about',
@@ -41,6 +42,9 @@ export const routes: Routes = [{
 }, {
   path: 'defer-multiple',
   component: DeferMultipleComponent,
+}, {
+  path: 'defer-npm-package',
+  component: DeferNPMPackageComponent,
 }, {
   path: 'defer-nested',
   component: DeferNestedComponent,

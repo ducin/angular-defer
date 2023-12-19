@@ -77,7 +77,8 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       <a routerLink="/defer-on-timer" routerLinkActive="active">⚡️ on timer</a>
       <br />
       <a routerLink="/defer-multiple" routerLinkActive="active">👫 multiple deferrable</a>
-      <a routerLink="/defer-nested" routerLinkActive="active">📦 nested defer</a>
+      <a routerLink="/defer-npm-package" routerLinkActive="active">📦 npm package</a>
+      <a routerLink="/defer-nested" routerLinkActive="active">🗃️ nested defer</a>
       <a routerLink="/defer-prefetch" routerLinkActive="active">⏱️ prefetch</a>
       <a routerLink="/defer-loading-vs-placeholder" routerLinkActive="active">🚚 loading vs placeholder</a>
       <a routerLink="/defer-error" routerLinkActive="active">💥 defer error</a>
