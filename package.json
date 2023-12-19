@@ -1,5 +1,7 @@
 {
   "name": "angular-defer",
+  "author": "Tomasz Ducin <tomasz.ducin@gmail.com>",
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +11,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^17.0.0",
     "@angular/common": "^17.0.0",

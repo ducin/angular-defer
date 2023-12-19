@@ -59,7 +59,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   `,
   template: `
     <header>
-      <h1 class="angular-gradient"> Angular ⚡️ <code>&#64;defer</code> ⚡️ Live Examples</h1>
+      <h1 class="angular-gradient"> Angular ⚡️ <code>&#64;defer</code> ⚡️ Interactive Examples</h1>
       <section><strong>author</strong>: by Tomasz Ducin, <a href="http://ducin.it/">ducin.it</a>, <a href="https://twitter.com/tomasz_ducin">&#64;tomasz_ducin</a>, see this <a href="https://github.com/ducin/angular-defer">github repo</a></section>
       <section><strong>documentation</strong>: <a href="https://angular.dev/guide/defer">official docs</a>, <a href="https://angular.io/guide/defer">legacy docs</a></section>
       <section>Open Browser Devtools <em>Network</em> tab.</section>
