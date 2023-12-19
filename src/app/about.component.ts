@@ -13,6 +13,8 @@ import { LoaderComponent } from './defer-usecases/loader';
       <h3>about the <code>&#64;defer</code> block</h3>
       <ul>
         <li>Angular <code>&#64;defer</code> block allows standalone <strong>components</strong>, <strong>directives</strong> and <strong>pipes</strong> to be dynamically loaded in runtime (via separate bundles) whenever a specified contition is met.</li>
+        <li>The <strong>main goal</strong> of <code>&#64;defer</code> is to enable more convenient <strong>lazy loading</strong> on template level.</li>
+        <li>Expected result: improved <a href="https://web.dev/articles/optimize-lcp">LCP / Largest Contenftul Paint</a> (since there's less to download, parse, execute and eventually less to render) and potentially also improved <a href="https://web.dev/articles/fid">FID / First Input Delay</a> (since there's less JS to download and parse, there's also higher chance that less messages would get enqueued within the Event Loop) metrics.</li>
       </ul>
     </article>
     <article>

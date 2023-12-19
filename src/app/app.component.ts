@@ -55,7 +55,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     <section><strong>author</strong>: by Tomasz Ducin, <a href="http://ducin.it/">ducin.it</a>, <a href="https://twitter.com/tomasz_ducin">&#64;tomasz_ducin</a>, see this <a href="https://github.com/ducin/angular-defer">github repo</a></section>
     <section><strong>documentation</strong>: <a href="https://angular.dev/guide/defer">official docs</a>, <a href="https://angular.io/guide/defer">legacy docs</a></section>
     <nav>
-      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/about" routerLinkActive="active">💡 About</a>
       <a routerLink="/defer-when-condition" routerLinkActive="active">⚡️ when condition</a>
       <a routerLink="/defer-on-idle" routerLinkActive="active">⚡️ on idle</a>
       <a routerLink="/defer-on-viewport" routerLinkActive="active">⚡️ on viewport</a>
@@ -63,10 +63,10 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       <a routerLink="/defer-on-hover" routerLinkActive="active">⚡️ on hover</a>
       <a routerLink="/defer-on-immediate" routerLinkActive="active">⚡️ on immediate</a>
       <a routerLink="/defer-on-timer" routerLinkActive="active">⚡️ on timer</a>
-
-    </nav>
-    <nav>
-      <a routerLink="/defer-nested" routerLinkActive="active">⚡️ nested defer</a>
+      <br />
+      <a routerLink="/defer-nested" routerLinkActive="active">🛠️ nested defer</a>
+      <a routerLink="/defer-loading-vs-placeholder" routerLinkActive="active">🤔 loading vs placeholder</a>
+      <a routerLink="/defer-error" routerLinkActive="active">💥 defer error</a>
     </nav>
     <router-outlet></router-outlet>
   `

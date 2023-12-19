@@ -15,7 +15,7 @@ import { HighlightDirective } from './highlight.directive';
   imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, LazyOnImmediateComponent, LazySharedComponent, StUpIdCaSePipe, HighlightDirective],
   template: `
     <app-box>
-      <content><code>immediate</code> triggers the deferred load immediately, meaning once the client has finished rendering, the defer chunk would then start fetching right away.</content>
+      <content>📚 <code>immediate</code> triggers the deferred load immediately, meaning once the client has finished rendering, the defer chunk would then start fetching right away.</content>
     </app-box>
 
     @defer (on immediate) {
@@ -41,7 +41,7 @@ import { HighlightDirective } from './highlight.directive';
       <h2>directive</h2>
       <div highlight>lazy loaded directive - I'm highlighted lol 🥹</div>
     } @placeholder (minimum 500ms) {
-      that would be immediate anyway...
+      that should load <strong>immediate</strong>...
     } @loading (after 100ms; minimum 1s) {
       <loader />
     } @error {

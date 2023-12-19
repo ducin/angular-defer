@@ -8,6 +8,8 @@ import { DeferOnHoverComponent } from './defer-usecases/defer-on-hover';
 import { DeferOnTimerComponent } from './defer-usecases/defer-on-timer';
 import { DeferOnImmediateComponent } from './defer-usecases/defer-on-immediate';
 import { DeferNestedComponent } from './defer-usecases/defer-nested';
+import { DeferLoadingVsPlaceholderComponent } from './defer-usecases/defer-loading-vs-placeholder';
+import { DeferErrorComponent } from './defer-usecases/defer-failed';
 
 export const routes: Routes = [{
   path: 'about',
@@ -36,6 +38,12 @@ export const routes: Routes = [{
 }, {
   path: 'defer-nested',
   component: DeferNestedComponent,
+}, {
+  path: 'defer-error',
+  component: DeferErrorComponent,
+}, {
+  path: 'defer-loading-vs-placeholder',
+  component: DeferLoadingVsPlaceholderComponent,
 }, {
   path: '',
   redirectTo: 'about',

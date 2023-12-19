@@ -15,7 +15,7 @@ import { HighlightDirective } from './highlight.directive';
   imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, LazyOnTimerComponent, LazySharedComponent, StUpIdCaSePipe, HighlightDirective],
   template: `
     <app-box>
-      <content><code>timer(x)</code> would trigger after a specified duration.</content>
+      <content>📚 <code>timer(x)</code> would trigger after a specified duration.</content>
     </app-box>
 
     @defer (on timer(2000ms)) {
@@ -41,7 +41,7 @@ import { HighlightDirective } from './highlight.directive';
       <h2>directive</h2>
       <div highlight>lazy loaded directive - I'm highlighted lol 🥹</div>
     } @placeholder (minimum 500ms) {
-      waiting for the timer...
+      wait for the timer...
     } @loading (after 100ms; minimum 1s) {
       <loader />
     } @error {

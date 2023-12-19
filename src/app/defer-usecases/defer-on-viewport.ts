@@ -33,8 +33,8 @@ import { HighlightDirective } from './highlight.directive';
   `,
   template: `
     <app-box>
-      <content><code>viewport</code> would trigger the deferred block when the specified content enters the viewport using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">IntersectionObserver</a> API. This could be the placeholder content or an element reference.</content>
-      <content><code>viewport</code> trigger <strong>with no parameters</strong> can only be placed on an <code>&#64;defer</code> that has a <code>&#64;placeholder</code> block with exactly one root element node.</content>
+      <content>📚 <code>viewport</code> would trigger the deferred block when the specified content enters the viewport using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API">IntersectionObserver</a> API. This could be the placeholder content or an element reference.</content>
+      <content>📚 <code>viewport</code> trigger <strong>with no parameters</strong> can only be placed on an <code>&#64;defer</code> that has a <code>&#64;placeholder</code> block with exactly one root element node.</content>
     </app-box>
 
     <div class="scroll-container box">

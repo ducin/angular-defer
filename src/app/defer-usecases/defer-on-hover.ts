@@ -16,7 +16,7 @@ import { HighlightDirective } from './highlight.directive';
   imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, ButtonComponent, LazyOnHoverComponent, LazySharedComponent, StUpIdCaSePipe, HighlightDirective],
   template: `
     <app-box>
-      <content><code>hover</code> triggers deferred loading when the mouse has hovered over the trigger area. Events used for this are <code>mouseenter</code> and <code>focusin</code>.</content>
+      <content>📚 <code>hover</code> triggers deferred loading when the mouse has hovered over the trigger area. Events used for this are <code>mouseenter</code> and <code>focusin</code>.</content>
     </app-box>
 
     @defer (on hover) {

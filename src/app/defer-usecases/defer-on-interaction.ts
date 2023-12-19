@@ -16,7 +16,7 @@ import { HighlightDirective } from './highlight.directive';
   imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, ButtonComponent, LazyOnInteractionComponent, LazySharedComponent, StUpIdCaSePipe, HighlightDirective],
   template: `
     <app-box>
-      <content><code>interaction</code> will trigger the deferred block when the user interacts with the specified element through <code>click</code> or <code>keydown</code> events.</content>
+      <content>📚 <code>interaction</code> will trigger the deferred block when the user interacts with the specified element through <code>click</code> or <code>keydown</code> events.</content>
     </app-box>
 
     @defer (on interaction) {

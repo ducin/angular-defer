@@ -5,32 +5,37 @@ import { LoaderComponent } from './loader';
 import { BoxComponent } from '../box.component';
 import { ButtonComponent } from '../button.component';
 import { LazyNestedComponent } from './lazy-nested';
-import { LazySharedComponent } from './lazy-shared';
 import { LegacyModule } from './legacy/legacy.module';
-import { StUpIdCaSePipe } from './stupid-case-pipe';
-import { HighlightDirective } from './highlight.directive';
+import { LazyNestedFurtherComponent } from './lazy-nested-further';
 
 @Component({
   selector: 'defer-nested',
   standalone: true,
-  imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, ButtonComponent, LazyNestedComponent, LazySharedComponent, StUpIdCaSePipe, HighlightDirective],
+  imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, ButtonComponent, LazyNestedComponent, LazyNestedFurtherComponent],
   template: `
     <app-box>
-      <content>...</content>
+      <content>📚 When you have <strong>nested</strong> <code>&#64;defer</code> blocks, make sure that an inner one has a different set of conditions, so that they don't trigger at the same time, causing cascading requests.</content>
     </app-box>
 
-    @defer (on idle) {
+    @defer (on timer(2s)) {
       <lazy-nested>
         <article>
-          some <code>&#64;defer (on idle)</code> content
+          some <code>&#64;defer (on timer(2s))</code> content
+
+          @defer (on interaction) {
+            <lazy-nested-further>
+              <article>
+                some <code>&#64;defer (on interaction)</code> content
+              </article>
+            </lazy-nested-further>
+          } @placeholder (minimum 500ms) {
+            <app-button>👉 interact with me (the placeholder) to load content 👈</app-button>
+          }
+
         </article>
       </lazy-nested>
     } @placeholder (minimum 500ms) {
-      <app-button>👉 hover me (the placeholder) to load content 👈</app-button>
-    } @loading (after 100ms; minimum 1s) {
-      <loader />
-    } @error {
-      something went wrong!
+      waiting 2s...
     }
   `,
 })

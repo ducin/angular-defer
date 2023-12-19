@@ -16,8 +16,8 @@ import { HighlightDirective } from './highlight.directive';
   imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, ButtonComponent, LazyOnIdleComponent, LazySharedComponent, StUpIdCaSePipe, HighlightDirective],
   template: `
     <app-box>
-      <content><code>idle</code> will trigger the deferred loading once the browser <strong>has reached an idle state</strong> (detected using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback">requestIdleCallback</a> API under the hood). <strong>This is the default behavior</strong> with a defer block.</content>
-      <content><code>idle</code> trigger <strong>cannot have parameters</strong>.</content>
+      <content>📚 <code>idle</code> will trigger the deferred loading once the browser <strong>has reached an idle state</strong> (detected using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback">requestIdleCallback</a> API under the hood). <strong>This is the default behavior</strong> with a defer block.</content>
+      <content>📚 <code>idle</code> trigger <strong>cannot have parameters</strong>.</content>
     </app-box>
 
     @defer (on idle) {
@@ -43,7 +43,7 @@ import { HighlightDirective } from './highlight.directive';
       <h2>directive</h2>
       <div highlight>lazy loaded directive - I'm highlighted lol 🥹</div>
     } @placeholder (minimum 500ms) {
-      <app-button>👉 hover me (the placeholder) to load content 👈</app-button>
+      just wait for <strong>idle</strong>...
     } @loading (after 100ms; minimum 1s) {
       <loader />
     } @error {

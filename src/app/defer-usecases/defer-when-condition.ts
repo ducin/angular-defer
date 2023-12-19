@@ -15,7 +15,7 @@ import { HighlightDirective } from './highlight.directive';
   imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, LazyWhenConditionComponent, LazySharedComponent, StUpIdCaSePipe, HighlightDirective],
   template: `
     <app-box>
-      <content>when checked, the <code>&#64;defer (when isVisible)</code> condition will switch to true.</content>
+      <content>🖐️ toggle the checkbox; when checked, the <code>&#64;defer (when isVisible)</code> condition will switch to true.</content>
       <div>
         <label>
           <input type="checkbox" [(ngModel)]="isVisible" />
