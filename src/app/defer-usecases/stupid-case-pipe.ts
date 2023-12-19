@@ -1,12 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-
-function StUpIdCaSe(str: string){
-  return [...str].map((char, idx) =>
-      idx % 2 == 0
-      ? char.toUpperCase()
-      : char.toLowerCase()
-  ).join('')
-}
+import { StUpIdCaSe } from 'stupid-case'
 
 @Pipe({
   name: 'StUpIdCaSe',

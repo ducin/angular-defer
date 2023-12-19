@@ -49,13 +49,22 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       -webkit-text-fill-color: transparent;
       -moz-text-fill-color: transparent;
     }
+
+    nav {
+      padding-bottom: 10px 0px;
+      margin: 4px 0px;
+      border-top: 1px solid var(--main-accent-color);
+      border-bottom: 1px solid var(--main-accent-color);
+    }
   `,
   template: `
-    <h1 class="angular-gradient"> Angular ⚡️ <code>&#64;defer</code> ⚡️ Live Examples</h1>
-    <section><strong>author</strong>: by Tomasz Ducin, <a href="http://ducin.it/">ducin.it</a>, <a href="https://twitter.com/tomasz_ducin">&#64;tomasz_ducin</a>, see this <a href="https://github.com/ducin/angular-defer">github repo</a></section>
-    <section><strong>documentation</strong>: <a href="https://angular.dev/guide/defer">official docs</a>, <a href="https://angular.io/guide/defer">legacy docs</a></section>
+    <header>
+      <h1 class="angular-gradient"> Angular ⚡️ <code>&#64;defer</code> ⚡️ Live Examples</h1>
+      <section><strong>author</strong>: by Tomasz Ducin, <a href="http://ducin.it/">ducin.it</a>, <a href="https://twitter.com/tomasz_ducin">&#64;tomasz_ducin</a>, see this <a href="https://github.com/ducin/angular-defer">github repo</a></section>
+      <section><strong>documentation</strong>: <a href="https://angular.dev/guide/defer">official docs</a>, <a href="https://angular.io/guide/defer">legacy docs</a></section>
+      <section>Open Browser Devtools <em>Network</em> tab.</section>
+    </header>
     <nav>
-      <a routerLink="/about" routerLinkActive="active">💡 About</a>
       <a routerLink="/defer-when-condition" routerLinkActive="active">⚡️ when condition</a>
       <a routerLink="/defer-on-idle" routerLinkActive="active">⚡️ on idle</a>
       <a routerLink="/defer-on-viewport" routerLinkActive="active">⚡️ on viewport</a>
@@ -64,9 +73,13 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
       <a routerLink="/defer-on-immediate" routerLinkActive="active">⚡️ on immediate</a>
       <a routerLink="/defer-on-timer" routerLinkActive="active">⚡️ on timer</a>
       <br />
-      <a routerLink="/defer-nested" routerLinkActive="active">🛠️ nested defer</a>
-      <a routerLink="/defer-loading-vs-placeholder" routerLinkActive="active">🤔 loading vs placeholder</a>
+      <a routerLink="/defer-nested" routerLinkActive="active">📦 nested defer</a>
+      <a routerLink="/defer-prefetch" routerLinkActive="active">⏱️ prefetch</a>
+      <a routerLink="/defer-loading-vs-placeholder" routerLinkActive="active">🚚 loading vs placeholder</a>
       <a routerLink="/defer-error" routerLinkActive="active">💥 defer error</a>
+      <br />
+      <a routerLink="/defer-guide" routerLinkActive="active">📚 defer guide</a>
+      <a routerLink="/about" routerLinkActive="active">💡 about this app</a>
     </nav>
     <router-outlet></router-outlet>
   `

@@ -15,6 +15,7 @@ import { HighlightDirective } from './highlight.directive';
   imports: [FormsModule, LegacyModule, LoaderComponent, BoxComponent, LazyWhenConditionComponent, LazySharedComponent, StUpIdCaSePipe, HighlightDirective],
   template: `
     <app-box>
+      <content>📚 if the <code>when</code> condition switches back to <code>false</code>, the defer block is <strong>not reverted back</strong> to the placeholder. The swap is a one-time operation. If the content within the block should be conditionally rendered, an <code>if</code> condition can be used within the block itself.</content>
       <content>🖐️ toggle the checkbox; when checked, the <code>&#64;defer (when isVisible)</code> condition will switch to true.</content>
       <div>
         <label>

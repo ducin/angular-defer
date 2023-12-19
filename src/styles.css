@@ -59,6 +59,10 @@ code {
   -moz-text-fill-color: transparent;
 }
 
+pre {
+  margin: 10px 20px;
+}
+
 a {
   text-decoration: none;
   color: var(--main-accent-color);
