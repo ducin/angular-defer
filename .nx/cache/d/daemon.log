@@ -1453,3 +1453,40 @@
 [NX Daemon Server] - 2023-12-20T06:45:16.844Z - [WATCHER]: Stopping the watcher for /Users/chautran/code/github/nartc/angular-defer (sources)
 [NX Daemon Server] - 2023-12-20T06:45:16.844Z - [WATCHER]: Stopping the watcher for /Users/chautran/code/github/nartc/angular-defer (outputs)
 [NX Daemon Server] - 2023-12-20T06:45:16.844Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX Daemon Server] - 2023-12-20T06:47:23.970Z - Started listening on: /var/folders/m8/961frmkj4s78ymbf36mk2wzm0000gn/T/c62a990479220e14c73f/d.sock
+[NX Daemon Server] - 2023-12-20T06:47:23.971Z - [WATCHER]: Subscribed to changes within: /Users/chautran/code/github/nartc/angular-defer (native)
+[NX Daemon Server] - 2023-12-20T06:47:23.981Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T06:47:23.981Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-20T06:47:23.982Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T06:47:23.982Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-20T06:47:23.983Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T06:47:23.983Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-20T06:47:23.983Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-20T06:47:24.027Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-20T06:47:24.027Z - Time taken for 'total for creating and serializing project graph' 44.39375001192093ms
+[NX Daemon Server] - 2023-12-20T06:47:24.028Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-20T06:47:24.028Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 45. Response time: 1.
+[NX Daemon Server] - 2023-12-20T06:47:24.033Z - [WATCHER]: .nx/cache/d/server-process.json was created or restored
+[NX Daemon Server] - 2023-12-20T06:47:24.036Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T06:47:24.036Z - [REQUEST]: .nx/cache/d/server-process.json
+[NX Daemon Server] - 2023-12-20T06:47:24.036Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-20T06:47:24.054Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-12-20T06:47:24.054Z - Time taken for 'hash changed files from watcher' 0.06729096174240112ms
+[NX Daemon Server] - 2023-12-20T06:47:24.054Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-12-20T06:47:24.054Z - Handled HASH_TASKS. Handling time: 18. Response time: 0.
+[NX Daemon Server] - 2023-12-20T06:47:24.499Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T06:47:24.547Z - [REQUEST]: Responding to the client. recordOutputsHash
+[NX Daemon Server] - 2023-12-20T06:47:24.547Z - Done responding to the client recordOutputsHash
+[NX Daemon Server] - 2023-12-20T06:47:24.547Z - Handled RECORD_OUTPUTS_HASH. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2023-12-20T06:47:24.554Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T06:47:24.685Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-20T06:47:24.685Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T06:47:24.686Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-20T06:47:24.687Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-20T06:47:24.687Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-20T06:47:24.687Z - Time taken for 'total for creating and serializing project graph' 0.0911250114440918ms
+[NX Daemon Server] - 2023-12-20T06:47:24.690Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-20T06:47:24.690Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-12-20T06:47:25.839Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T06:53:57.858Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T06:53:57.875Z - Closed a connection. Number of open connections: 0
