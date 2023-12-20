@@ -41,6 +41,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-src/assets/snippets/**/*
 !src/assets/snippets/.gitkeep
 .nx/cache

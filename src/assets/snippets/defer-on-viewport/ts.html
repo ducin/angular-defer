@@ -1,0 +1,79 @@
+<pre class="shiki light-plus" style="background-color: #FFFFFF" tabindex="0"><code><span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Component</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;@angular/core&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">FormsModule</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;@angular/forms&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">LoaderComponent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;./loader&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">BoxComponent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;../box.component&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">LazyOnViewportComponent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;./lazy-on-viewport&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">LazySharedComponent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;./lazy-shared&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">LegacyModule</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;./legacy/legacy.module&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">StUpIdCaSePipe</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;./stupid-case-pipe&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">HighlightDirective</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;./highlight.directive&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #000000">@</span><span style="color: #795E26">Component</span><span style="color: #000000">({</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">selector:</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;defer-on-viewport&#39;</span><span style="color: #000000">,</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">standalone:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">imports:</span><span style="color: #000000"> [</span><span style="color: #001080">FormsModule</span><span style="color: #000000">, </span><span style="color: #001080">LegacyModule</span><span style="color: #000000">, </span><span style="color: #001080">LoaderComponent</span><span style="color: #000000">, </span><span style="color: #001080">BoxComponent</span><span style="color: #000000">, </span><span style="color: #001080">LazyOnViewportComponent</span><span style="color: #000000">, </span><span style="color: #001080">LazySharedComponent</span><span style="color: #000000">, </span><span style="color: #001080">StUpIdCaSePipe</span><span style="color: #000000">, </span><span style="color: #001080">HighlightDirective</span><span style="color: #000000">],</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">styles:</span><span style="color: #000000"> </span><span style="color: #A31515">`</span></span>
+<span class="line"><span style="color: #A31515">    .scroll-container {</span></span>
+<span class="line"><span style="color: #A31515">      border: 1px solid var(--main-accent-color);</span></span>
+<span class="line"><span style="color: #A31515">      border-radius: 6px;</span></span>
+<span class="line"><span style="color: #A31515">      width: 75%;</span></span>
+<span class="line"><span style="color: #A31515">      height: 250px;</span></span>
+<span class="line"><span style="color: #A31515">      max-height: 50%;</span></span>
+<span class="line"><span style="color: #A31515">      overflow-y: scroll;</span></span>
+<span class="line"><span style="color: #A31515">      scroll-behavior: smooth;</span></span>
+<span class="line"><span style="color: #A31515">    }</span></span>
+<span class="line"><span style="color: #A31515">    .scroll-page {</span></span>
+<span class="line"><span style="color: #A31515">      display: flex;</span></span>
+<span class="line"><span style="color: #A31515">      align-items: center;</span></span>
+<span class="line"><span style="color: #A31515">      justify-content: center;</span></span>
+<span class="line"><span style="color: #A31515">      height: 100%;</span></span>
+<span class="line"><span style="color: #A31515">      font-size: 2em;</span></span>
+<span class="line"><span style="color: #A31515">    }</span></span>
+<span class="line"><span style="color: #A31515">  `</span><span style="color: #000000">,</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">templateUrl:</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;component.html&#39;</span><span style="color: #000000">,</span></span>
+<span class="line"><span style="color: #000000">})</span></span>
+<span class="line"><span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">class</span><span style="color: #000000"> </span><span style="color: #267F99">DeferOnViewportComponent</span><span style="color: #000000"> {</span></span>
+<span class="line"><span style="color: #000000">}</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+
+<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@angular/core&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">FormsModule</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@angular/forms&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">LoaderComponent</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./loader&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">BoxComponent</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;../box.component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">LazyOnViewportComponent</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./lazy-on-viewport&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">LazySharedComponent</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./lazy-shared&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">LegacyModule</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./legacy/legacy.module&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">StUpIdCaSePipe</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./stupid-case-pipe&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">HighlightDirective</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./highlight.directive&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">@</span><span style="color: #DCDCAA">Component</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">selector:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;defer-on-viewport&#39;</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">standalone:</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">true</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">imports:</span><span style="color: #D4D4D4"> [</span><span style="color: #9CDCFE">FormsModule</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">LegacyModule</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">LoaderComponent</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">BoxComponent</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">LazyOnViewportComponent</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">LazySharedComponent</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">StUpIdCaSePipe</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">HighlightDirective</span><span style="color: #D4D4D4">],</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">styles:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">`</span></span>
+<span class="line"><span style="color: #CE9178">    .scroll-container {</span></span>
+<span class="line"><span style="color: #CE9178">      border: 1px solid var(--main-accent-color);</span></span>
+<span class="line"><span style="color: #CE9178">      border-radius: 6px;</span></span>
+<span class="line"><span style="color: #CE9178">      width: 75%;</span></span>
+<span class="line"><span style="color: #CE9178">      height: 250px;</span></span>
+<span class="line"><span style="color: #CE9178">      max-height: 50%;</span></span>
+<span class="line"><span style="color: #CE9178">      overflow-y: scroll;</span></span>
+<span class="line"><span style="color: #CE9178">      scroll-behavior: smooth;</span></span>
+<span class="line"><span style="color: #CE9178">    }</span></span>
+<span class="line"><span style="color: #CE9178">    .scroll-page {</span></span>
+<span class="line"><span style="color: #CE9178">      display: flex;</span></span>
+<span class="line"><span style="color: #CE9178">      align-items: center;</span></span>
+<span class="line"><span style="color: #CE9178">      justify-content: center;</span></span>
+<span class="line"><span style="color: #CE9178">      height: 100%;</span></span>
+<span class="line"><span style="color: #CE9178">      font-size: 2em;</span></span>
+<span class="line"><span style="color: #CE9178">    }</span></span>
+<span class="line"><span style="color: #CE9178">  `</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">templateUrl:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;component.html&#39;</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"><span style="color: #D4D4D4">})</span></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">DeferOnViewportComponent</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>

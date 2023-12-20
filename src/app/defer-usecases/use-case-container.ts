@@ -1,15 +1,14 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  inject,
-  signal,
 } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { filter, switchMap } from 'rxjs';
+import { RouterOutlet } from '@angular/router';
 import { SnippetDialogContent } from '../ui-snippet-dialog-content/ui-snippet-dialog-content';
 
 @Component({
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [RouterOutlet, SnippetDialogContent],
+  host: { class: 'use-case-container' },
   standalone: true,
   template: `
     <router-outlet />
@@ -58,7 +57,6 @@ import { SnippetDialogContent } from '../ui-snippet-dialog-content/ui-snippet-di
       }
     </dialog>
   `,
-  imports: [RouterOutlet, SnippetDialogContent],
   styles: `
     button {
       cursor: pointer;
@@ -120,8 +118,6 @@ import { SnippetDialogContent } from '../ui-snippet-dialog-content/ui-snippet-di
       background: #000;
       opacity: 0.75;
     }
-  `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  host: { class: 'use-case-container' },
+    `
 })
 export default class UseCaseContainer {}

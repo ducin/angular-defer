@@ -1,0 +1,115 @@
+<pre class="shiki light-plus" style="background-color: #FFFFFF" tabindex="0"><code><span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Component</span><span style="color: #000000">, </span><span style="color: #001080">ElementRef</span><span style="color: #000000">, </span><span style="color: #001080">inject</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;@angular/core&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">BoxComponent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;../box.component&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">LazyAccordionContentAComponent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;./lazy-accordion-content-a&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">LazyAccordionContentBComponent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;./lazy-accordion-content-b&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">LazyAccordionContentCComponent</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;./lazy-accordion-content-c&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #000000">@</span><span style="color: #795E26">Component</span><span style="color: #000000">({</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">selector:</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;defer-accordion&#39;</span><span style="color: #000000">,</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">standalone:</span><span style="color: #000000"> </span><span style="color: #0000FF">true</span><span style="color: #000000">,</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">imports:</span><span style="color: #000000"> [</span><span style="color: #001080">BoxComponent</span><span style="color: #000000">, </span><span style="color: #001080">LazyAccordionContentAComponent</span><span style="color: #000000">, </span><span style="color: #001080">LazyAccordionContentBComponent</span><span style="color: #000000">, </span><span style="color: #001080">LazyAccordionContentCComponent</span><span style="color: #000000">],</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">styles:</span><span style="color: #000000"> </span><span style="color: #A31515">`</span></span>
+<span class="line"><span style="color: #A31515">  .accordion {</span></span>
+<span class="line"><span style="color: #A31515">    background-color: var(--main-background-color);</span></span>
+<span class="line"><span style="color: #A31515">    color: var(--text-color);</span></span>
+<span class="line"><span style="color: #A31515">    cursor: pointer;</span></span>
+<span class="line"><span style="color: #A31515">    padding: 18px;</span></span>
+<span class="line"><span style="color: #A31515">    width: 100%;</span></span>
+<span class="line"><span style="color: #A31515">    text-align: left;</span></span>
+<span class="line"><span style="color: #A31515">    border: none;</span></span>
+<span class="line"><span style="color: #A31515">    outline: none;</span></span>
+<span class="line"><span style="color: #A31515">    transition: 0.4s;</span></span>
+<span class="line"><span style="color: #A31515">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #A31515">  .active, .accordion:hover {</span></span>
+<span class="line"><span style="color: #A31515">    background-color: var(--secondary-background-color);</span></span>
+<span class="line"><span style="color: #A31515">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #A31515">  .panel {</span></span>
+<span class="line"><span style="color: #A31515">    padding: 0 18px;</span></span>
+<span class="line"><span style="color: #A31515">    background-color: var(--main-background-color);</span></span>
+<span class="line"><span style="color: #A31515">    display: none;</span></span>
+<span class="line"><span style="color: #A31515">    overflow: hidden;</span></span>
+<span class="line"><span style="color: #A31515">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #A31515">  .accordion-content {</span></span>
+<span class="line"><span style="color: #A31515">    margin: 10px;</span></span>
+<span class="line"><span style="color: #A31515">    width: 75%;</span></span>
+<span class="line"><span style="color: #A31515">  }</span></span>
+<span class="line"><span style="color: #A31515">  `</span><span style="color: #000000">,</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">templateUrl:</span><span style="color: #000000"> </span><span style="color: #A31515">&#39;component.html&#39;</span><span style="color: #000000">,</span></span>
+<span class="line"><span style="color: #000000">})</span></span>
+<span class="line"><span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">class</span><span style="color: #000000"> </span><span style="color: #267F99">DeferAccordionComponent</span><span style="color: #000000"> {</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">#elementRef</span><span style="color: #000000"> = </span><span style="color: #795E26">inject</span><span style="color: #000000">(</span><span style="color: #001080">ElementRef</span><span style="color: #000000">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">#buttons</span><span style="color: #000000"> = </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">#elementRef</span><span style="color: #000000">.</span><span style="color: #001080">nativeElement</span><span style="color: #000000">.</span><span style="color: #795E26">getElementsByClassName</span><span style="color: #000000">(</span><span style="color: #A31515">&#39;accordion&#39;</span><span style="color: #000000">);</span></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #001080">#panels</span><span style="color: #000000"> = </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">#elementRef</span><span style="color: #000000">.</span><span style="color: #001080">nativeElement</span><span style="color: #000000">.</span><span style="color: #795E26">getElementsByClassName</span><span style="color: #000000">(</span><span style="color: #A31515">&#39;panel&#39;</span><span style="color: #000000">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #000000">  </span><span style="color: #795E26">toggleVisible</span><span style="color: #000000">(</span><span style="color: #001080">sectionIndex</span><span style="color: #000000">: </span><span style="color: #267F99">number</span><span style="color: #000000">) {</span></span>
+<span class="line"><span style="color: #000000">    </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">#buttons</span><span style="color: #000000">[</span><span style="color: #001080">sectionIndex</span><span style="color: #000000">].</span><span style="color: #001080">classList</span><span style="color: #000000">.</span><span style="color: #795E26">toggle</span><span style="color: #000000">(</span><span style="color: #A31515">&#39;active&#39;</span><span style="color: #000000">);</span></span>
+<span class="line"><span style="color: #000000">    </span><span style="color: #AF00DB">for</span><span style="color: #000000"> (</span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">panel</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">#panels</span><span style="color: #000000">){</span></span>
+<span class="line"><span style="color: #000000">      </span><span style="color: #001080">panel</span><span style="color: #000000">.</span><span style="color: #001080">style</span><span style="color: #000000">.</span><span style="color: #001080">display</span><span style="color: #000000"> = </span><span style="color: #A31515">&#39;none&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #000000">    }</span></span>
+<span class="line"><span style="color: #000000">    </span><span style="color: #0000FF">this</span><span style="color: #000000">.</span><span style="color: #001080">#panels</span><span style="color: #000000">[</span><span style="color: #001080">sectionIndex</span><span style="color: #000000">].</span><span style="color: #001080">style</span><span style="color: #000000">.</span><span style="color: #001080">display</span><span style="color: #000000"> = </span><span style="color: #A31515">&#39;block&#39;</span><span style="color: #000000">;</span></span>
+<span class="line"><span style="color: #000000">  }</span></span>
+<span class="line"><span style="color: #000000">}</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+
+<pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">Component</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">ElementRef</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">inject</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;@angular/core&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">BoxComponent</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;../box.component&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">LazyAccordionContentAComponent</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./lazy-accordion-content-a&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">LazyAccordionContentBComponent</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./lazy-accordion-content-b&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #C586C0">import</span><span style="color: #D4D4D4"> { </span><span style="color: #9CDCFE">LazyAccordionContentCComponent</span><span style="color: #D4D4D4"> } </span><span style="color: #C586C0">from</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;./lazy-accordion-content-c&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">@</span><span style="color: #DCDCAA">Component</span><span style="color: #D4D4D4">({</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">selector:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;defer-accordion&#39;</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">standalone:</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">true</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">imports:</span><span style="color: #D4D4D4"> [</span><span style="color: #9CDCFE">BoxComponent</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">LazyAccordionContentAComponent</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">LazyAccordionContentBComponent</span><span style="color: #D4D4D4">, </span><span style="color: #9CDCFE">LazyAccordionContentCComponent</span><span style="color: #D4D4D4">],</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">styles:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">`</span></span>
+<span class="line"><span style="color: #CE9178">  .accordion {</span></span>
+<span class="line"><span style="color: #CE9178">    background-color: var(--main-background-color);</span></span>
+<span class="line"><span style="color: #CE9178">    color: var(--text-color);</span></span>
+<span class="line"><span style="color: #CE9178">    cursor: pointer;</span></span>
+<span class="line"><span style="color: #CE9178">    padding: 18px;</span></span>
+<span class="line"><span style="color: #CE9178">    width: 100%;</span></span>
+<span class="line"><span style="color: #CE9178">    text-align: left;</span></span>
+<span class="line"><span style="color: #CE9178">    border: none;</span></span>
+<span class="line"><span style="color: #CE9178">    outline: none;</span></span>
+<span class="line"><span style="color: #CE9178">    transition: 0.4s;</span></span>
+<span class="line"><span style="color: #CE9178">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #CE9178">  .active, .accordion:hover {</span></span>
+<span class="line"><span style="color: #CE9178">    background-color: var(--secondary-background-color);</span></span>
+<span class="line"><span style="color: #CE9178">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #CE9178">  .panel {</span></span>
+<span class="line"><span style="color: #CE9178">    padding: 0 18px;</span></span>
+<span class="line"><span style="color: #CE9178">    background-color: var(--main-background-color);</span></span>
+<span class="line"><span style="color: #CE9178">    display: none;</span></span>
+<span class="line"><span style="color: #CE9178">    overflow: hidden;</span></span>
+<span class="line"><span style="color: #CE9178">  }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #CE9178">  .accordion-content {</span></span>
+<span class="line"><span style="color: #CE9178">    margin: 10px;</span></span>
+<span class="line"><span style="color: #CE9178">    width: 75%;</span></span>
+<span class="line"><span style="color: #CE9178">  }</span></span>
+<span class="line"><span style="color: #CE9178">  `</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">templateUrl:</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&#39;component.html&#39;</span><span style="color: #D4D4D4">,</span></span>
+<span class="line"><span style="color: #D4D4D4">})</span></span>
+<span class="line"><span style="color: #C586C0">export</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">DeferAccordionComponent</span><span style="color: #D4D4D4"> {</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">#elementRef</span><span style="color: #D4D4D4"> = </span><span style="color: #DCDCAA">inject</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">ElementRef</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">#buttons</span><span style="color: #D4D4D4"> = </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">#elementRef</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">nativeElement</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">getElementsByClassName</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;accordion&#39;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #9CDCFE">#panels</span><span style="color: #D4D4D4"> = </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">#elementRef</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">nativeElement</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">getElementsByClassName</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;panel&#39;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">  </span><span style="color: #DCDCAA">toggleVisible</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">sectionIndex</span><span style="color: #D4D4D4">: </span><span style="color: #4EC9B0">number</span><span style="color: #D4D4D4">) {</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">#buttons</span><span style="color: #D4D4D4">[</span><span style="color: #9CDCFE">sectionIndex</span><span style="color: #D4D4D4">].</span><span style="color: #9CDCFE">classList</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">toggle</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&#39;active&#39;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #C586C0">for</span><span style="color: #D4D4D4"> (</span><span style="color: #569CD6">const</span><span style="color: #D4D4D4"> </span><span style="color: #4FC1FF">panel</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">of</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">#panels</span><span style="color: #D4D4D4">){</span></span>
+<span class="line"><span style="color: #D4D4D4">      </span><span style="color: #9CDCFE">panel</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">style</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">display</span><span style="color: #D4D4D4"> = </span><span style="color: #CE9178">&#39;none&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">this</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">#panels</span><span style="color: #D4D4D4">[</span><span style="color: #9CDCFE">sectionIndex</span><span style="color: #D4D4D4">].</span><span style="color: #9CDCFE">style</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">display</span><span style="color: #D4D4D4"> = </span><span style="color: #CE9178">&#39;block&#39;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">  }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>

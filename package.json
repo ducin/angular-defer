@@ -3,6 +3,7 @@
   "author": "Tomasz Ducin <tomasz.ducin@gmail.com>",
   "private": true,
   "version": "0.0.0",
+  "node": ">=20.9.0",
   "scripts": {
     "ng": "ng",
     "start": "nx serve",
