@@ -49,10 +49,12 @@ import { SnippetDialogContent } from '../ui-snippet-dialog-content/ui-snippet-di
           />
         </svg>
       </button>
-      @defer (on viewport(codeDialog)) {
-        <app-snippet-dialog-content />
-      } @loading (after 60ms; minimum 500ms) {
-        <p>Loading snippets...</p>
+      @if (codeDialog.open) {
+        @defer {
+          <app-snippet-dialog-content />
+        } @loading (after 60ms; minimum 500ms) {
+          <p>Loading snippets...</p>
+        }
       }
     </dialog>
   `,

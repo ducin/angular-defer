@@ -43,18 +43,18 @@ const useCases = [
   "lazy-when-condition",
 ];
 
-const [lightRenderer, darkRenderer] = await Promise.all([
-  getHighlighter({ theme: "light-plus", langs: ["typescript", "blade"] }).then(
-    getRenderer,
-  ),
-  getHighlighter({ theme: "dark-plus", langs: ["typescript", "blade"] }).then(
-    getRenderer,
-  ),
-]);
+const themes = ["light-plus", "dark-plus"];
+const roots = ["../src/app/defer-usecases/", "../src/assets/snippets/"];
 
-const useCasesRoot = new URL("../src/app/defer-usecases/", import.meta.url)
-  .pathname;
-const assetsRoot = new URL("../src/assets/snippets/", import.meta.url).pathname;
+const renderers = await Promise.all(
+  themes.map((theme) =>
+    getHighlighter({ theme, langs: ["typescript", "blade"] }).then(getRenderer),
+  ),
+);
+
+const [useCasesRoot, assetsRoot] = roots.map(
+  (root) => new URL(root, import.meta.url).pathname,
+);
 
 const useCaseFiles = await readdir(useCasesRoot, {
   recursive: true,
@@ -70,12 +70,14 @@ for (const [filePath, name] of useCaseFiles) {
   const [typeScriptCode, htmlCode] = await readFile(filePath, {
     encoding: "utf8",
   }).then(processFileContent);
-  const [lightTsOut, darkTsOut, lightHtmlOut, darkHtmlOut] = [
-    render(lightRenderer, typeScriptCode, "ts"),
-    render(darkRenderer, typeScriptCode, "ts"),
-    render(lightRenderer, htmlCode, "blade"),
-    render(darkRenderer, htmlCode, "blade"),
-  ];
+
+  const [lightTsOut, lightHtmlOut, darkTsOut, darkHtmlOut] = renderers.flatMap(
+    (renderer) => [
+      render(renderer, typeScriptCode, "ts"),
+      render(renderer, htmlCode, "blade"),
+    ],
+  );
+
   const useCaseAssetRoot = join(assetsRoot, name, "/");
 
   if (!existsSync(useCaseAssetRoot)) {
