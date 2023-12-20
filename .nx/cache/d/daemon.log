@@ -1,0 +1,632 @@
+[NX Daemon Server] - 2023-12-20T03:20:27.506Z - Started listening on: /var/folders/m8/961frmkj4s78ymbf36mk2wzm0000gn/T/c62a990479220e14c73f/d.sock
+[NX Daemon Server] - 2023-12-20T03:20:27.508Z - [WATCHER]: Subscribed to changes within: /Users/chautran/code/github/nartc/angular-defer (native)
+[NX Daemon Server] - 2023-12-20T03:20:27.515Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T03:20:27.516Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-20T03:20:27.516Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T03:20:27.517Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-20T03:20:27.517Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:20:27.517Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-20T03:20:27.517Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-20T03:20:27.582Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-20T03:20:27.583Z - Time taken for 'total for creating and serializing project graph' 65.27149999141693ms
+[NX Daemon Server] - 2023-12-20T03:20:27.583Z - [WATCHER]: .nx/cache/d/server-process.json was created or restored
+[NX Daemon Server] - 2023-12-20T03:20:27.585Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-20T03:20:27.585Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 65. Response time: 3.
+[NX Daemon Server] - 2023-12-20T03:20:27.597Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:20:27.597Z - [REQUEST]: .nx/cache/d/server-process.json
+[NX Daemon Server] - 2023-12-20T03:20:27.597Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-20T03:20:27.616Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-12-20T03:20:27.616Z - Time taken for 'hash changed files from watcher' 0.06745803356170654ms
+[NX Daemon Server] - 2023-12-20T03:20:27.616Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-12-20T03:20:27.616Z - Handled HASH_TASKS. Handling time: 19. Response time: 0.
+[NX Daemon Server] - 2023-12-20T03:20:27.842Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-20T03:20:27.843Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T03:20:27.843Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-20T03:20:27.844Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-20T03:20:27.844Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-20T03:20:27.844Z - Time taken for 'total for creating and serializing project graph' 0.16558301448822021ms
+[NX Daemon Server] - 2023-12-20T03:20:27.847Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-20T03:20:27.847Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-12-20T03:20:29.073Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:20:29.289Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:20:30.183Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:20:33.289Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:23:13.437Z - [WATCHER]: src/app/defer-usecases/use-case-container.ts was created or restored
+[NX Daemon Server] - 2023-12-20T03:23:13.437Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:23:13.539Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:23:13.539Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:23:13.540Z - [REQUEST]: 
+[NX Daemon Server] - 2023-12-20T03:23:13.570Z - Time taken for 'hash changed files from watcher' 0.30766600370407104ms
+[NX Daemon Server] - 2023-12-20T03:23:37.158Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:23:37.158Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:23:37.259Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:23:37.259Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:23:37.259Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:23:37.278Z - Time taken for 'hash changed files from watcher' 0.17100000381469727ms
+[NX Daemon Server] - 2023-12-20T03:23:41.973Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:23:41.974Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:23:42.075Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:23:42.076Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:23:42.076Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:23:42.092Z - Time taken for 'hash changed files from watcher' 0.16879194974899292ms
+[NX Daemon Server] - 2023-12-20T03:23:55.451Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:23:55.451Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:23:55.552Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:23:55.552Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:23:55.552Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:23:55.568Z - Time taken for 'hash changed files from watcher' 0.13679200410842896ms
+[NX Daemon Server] - 2023-12-20T03:24:04.207Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:24:04.207Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:24:04.309Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:24:04.309Z - [REQUEST]: src/app/app.routes.ts
+[NX Daemon Server] - 2023-12-20T03:24:04.309Z - [REQUEST]: src/app/4913
+[NX Daemon Server] - 2023-12-20T03:24:04.327Z - Time taken for 'hash changed files from watcher' 0.14112496376037598ms
+[NX Daemon Server] - 2023-12-20T03:24:04.676Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:25:05.315Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:25:05.316Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:25:05.416Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:25:05.416Z - [REQUEST]: src/app/app.routes.ts
+[NX Daemon Server] - 2023-12-20T03:25:05.416Z - [REQUEST]: src/app/4913
+[NX Daemon Server] - 2023-12-20T03:25:05.433Z - Time taken for 'hash changed files from watcher' 0.14641696214675903ms
+[NX Daemon Server] - 2023-12-20T03:25:05.813Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:25:18.649Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:25:18.649Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:25:18.750Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:25:18.750Z - [REQUEST]: src/app/app.routes.ts
+[NX Daemon Server] - 2023-12-20T03:25:18.750Z - [REQUEST]: src/app/4913
+[NX Daemon Server] - 2023-12-20T03:25:18.769Z - Time taken for 'hash changed files from watcher' 0.15095800161361694ms
+[NX Daemon Server] - 2023-12-20T03:25:19.113Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:27:45.391Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:27:45.391Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:27:45.492Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:27:45.492Z - [REQUEST]: src/app/app.routes.ts
+[NX Daemon Server] - 2023-12-20T03:27:45.492Z - [REQUEST]: src/app/4913
+[NX Daemon Server] - 2023-12-20T03:27:45.509Z - Time taken for 'hash changed files from watcher' 0.1466660499572754ms
+[NX Daemon Server] - 2023-12-20T03:27:45.910Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:27:50.107Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:27:50.107Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:27:50.207Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:27:50.207Z - [REQUEST]: src/app/app.routes.ts
+[NX Daemon Server] - 2023-12-20T03:27:50.207Z - [REQUEST]: src/app/4913
+[NX Daemon Server] - 2023-12-20T03:27:50.226Z - Time taken for 'hash changed files from watcher' 0.1152079701423645ms
+[NX Daemon Server] - 2023-12-20T03:27:50.522Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:28:07.222Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:28:07.222Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:28:07.324Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:28:07.324Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:28:07.324Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:28:07.339Z - Time taken for 'hash changed files from watcher' 0.1352909803390503ms
+[NX Daemon Server] - 2023-12-20T03:28:07.729Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:28:09.125Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T03:28:09.139Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-12-20T03:28:10.879Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T03:28:10.879Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2023-12-20T03:28:10.880Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T03:28:10.880Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-20T03:28:10.881Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-20T03:28:10.881Z - Time taken for 'total for creating and serializing project graph' 0.07941699028015137ms
+[NX Daemon Server] - 2023-12-20T03:28:10.882Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-20T03:28:10.882Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2023-12-20T03:28:10.896Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2023-12-20T03:28:10.896Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2023-12-20T03:28:10.896Z - Handled HASH_TASKS. Handling time: 7. Response time: 0.
+[NX Daemon Server] - 2023-12-20T03:28:11.022Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-20T03:28:11.023Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2023-12-20T03:28:11.023Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2023-12-20T03:28:11.024Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2023-12-20T03:28:11.024Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2023-12-20T03:28:11.024Z - Time taken for 'total for creating and serializing project graph' 0.17395800352096558ms
+[NX Daemon Server] - 2023-12-20T03:28:11.027Z - Done responding to the client project-graph
+[NX Daemon Server] - 2023-12-20T03:28:11.027Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 3.
+[NX Daemon Server] - 2023-12-20T03:28:12.160Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:28:39.792Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:28:39.792Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:28:39.894Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:28:39.894Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:28:39.894Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:28:39.910Z - Time taken for 'hash changed files from watcher' 0.12820899486541748ms
+[NX Daemon Server] - 2023-12-20T03:28:40.343Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:29:04.615Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:29:04.615Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:29:04.717Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:29:04.717Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:29:04.717Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:29:04.737Z - Time taken for 'hash changed files from watcher' 0.17295795679092407ms
+[NX Daemon Server] - 2023-12-20T03:29:05.144Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:31:01.609Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:31:01.609Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:31:01.711Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:31:01.711Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:31:01.711Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:31:01.728Z - Time taken for 'hash changed files from watcher' 0.2230830192565918ms
+[NX Daemon Server] - 2023-12-20T03:31:02.120Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:00.071Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:32:00.071Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:00.171Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:32:00.171Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:32:00.171Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:32:00.190Z - Time taken for 'hash changed files from watcher' 0.13041597604751587ms
+[NX Daemon Server] - 2023-12-20T03:32:00.610Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:13.982Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:32:13.983Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:14.084Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:32:14.084Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:32:14.084Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:32:14.100Z - Time taken for 'hash changed files from watcher' 0.1345829963684082ms
+[NX Daemon Server] - 2023-12-20T03:32:14.415Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:27.817Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:32:27.817Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:27.919Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:32:27.919Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:32:27.919Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:32:27.939Z - Time taken for 'hash changed files from watcher' 0.1546250581741333ms
+[NX Daemon Server] - 2023-12-20T03:32:28.247Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:39.616Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:39.616Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:32:39.717Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:32:39.718Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:32:39.718Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:32:39.733Z - Time taken for 'hash changed files from watcher' 0.15016698837280273ms
+[NX Daemon Server] - 2023-12-20T03:32:40.028Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:45.231Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:32:45.231Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:45.332Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:32:45.332Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:32:45.332Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:32:45.352Z - Time taken for 'hash changed files from watcher' 0.1257910132408142ms
+[NX Daemon Server] - 2023-12-20T03:32:45.643Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:48.077Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:32:48.077Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:32:48.178Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:32:48.179Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:32:48.179Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:32:48.192Z - Time taken for 'hash changed files from watcher' 0.2219579815864563ms
+[NX Daemon Server] - 2023-12-20T03:32:48.406Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:33:07.719Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:33:07.720Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:33:07.820Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:33:07.820Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:33:07.820Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:33:07.837Z - Time taken for 'hash changed files from watcher' 0.14891701936721802ms
+[NX Daemon Server] - 2023-12-20T03:33:08.183Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:33:40.491Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:33:40.491Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:33:40.592Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:33:40.592Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:33:40.592Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:33:40.611Z - Time taken for 'hash changed files from watcher' 0.15029102563858032ms
+[NX Daemon Server] - 2023-12-20T03:33:40.894Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:33:52.771Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:33:52.771Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:33:52.872Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:33:52.872Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:33:52.873Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:33:52.888Z - Time taken for 'hash changed files from watcher' 0.1254580020904541ms
+[NX Daemon Server] - 2023-12-20T03:33:53.181Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:34:32.187Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:34:32.187Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:34:32.289Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:34:32.289Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:34:32.289Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:34:32.307Z - Time taken for 'hash changed files from watcher' 0.18091696500778198ms
+[NX Daemon Server] - 2023-12-20T03:34:32.711Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:34:34.901Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:34:34.901Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:34:35.002Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:34:35.003Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:34:35.003Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:34:35.019Z - Time taken for 'hash changed files from watcher' 0.15495800971984863ms
+[NX Daemon Server] - 2023-12-20T03:34:35.326Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:13.489Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:13.490Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:35:13.591Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:35:13.591Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:35:13.591Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:35:13.606Z - Time taken for 'hash changed files from watcher' 0.12233299016952515ms
+[NX Daemon Server] - 2023-12-20T03:35:13.990Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:26.684Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:26.684Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:35:26.785Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:35:26.786Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:35:26.786Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:35:26.805Z - Time taken for 'hash changed files from watcher' 0.16245901584625244ms
+[NX Daemon Server] - 2023-12-20T03:35:27.086Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:49.711Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:35:49.712Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:49.813Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:35:49.813Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:35:49.813Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:35:49.829Z - Time taken for 'hash changed files from watcher' 0.2372499704360962ms
+[NX Daemon Server] - 2023-12-20T03:35:50.205Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:54.783Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:35:54.784Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:54.885Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:35:54.885Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:35:54.885Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:35:54.903Z - Time taken for 'hash changed files from watcher' 0.14499998092651367ms
+[NX Daemon Server] - 2023-12-20T03:35:55.086Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:59.152Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:35:59.152Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:35:59.252Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:35:59.252Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:35:59.252Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:35:59.267Z - Time taken for 'hash changed files from watcher' 0.18037497997283936ms
+[NX Daemon Server] - 2023-12-20T03:35:59.482Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:36:02.530Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:36:02.530Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:36:02.631Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:36:02.631Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:36:02.631Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:36:02.647Z - Time taken for 'hash changed files from watcher' 0.13508296012878418ms
+[NX Daemon Server] - 2023-12-20T03:36:02.940Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:36:26.626Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:36:26.626Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:36:26.728Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:36:26.728Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:36:26.728Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:36:26.744Z - Time taken for 'hash changed files from watcher' 0.1880829930305481ms
+[NX Daemon Server] - 2023-12-20T03:36:27.125Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:36:37.993Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:36:37.993Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:36:38.095Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:36:38.095Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:36:38.095Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:36:38.113Z - Time taken for 'hash changed files from watcher' 0.14612501859664917ms
+[NX Daemon Server] - 2023-12-20T03:36:38.392Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:36:54.359Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:36:54.359Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:36:54.461Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:36:54.461Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:36:54.461Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:36:54.478Z - Time taken for 'hash changed files from watcher' 0.17458295822143555ms
+[NX Daemon Server] - 2023-12-20T03:36:54.880Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:37:42.536Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:37:42.536Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:37:42.638Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:37:42.638Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:37:42.638Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:37:42.657Z - Time taken for 'hash changed files from watcher' 0.16545802354812622ms
+[NX Daemon Server] - 2023-12-20T03:37:43.056Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:37:58.914Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:37:58.914Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:37:59.015Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:37:59.015Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:37:59.015Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:37:59.032Z - Time taken for 'hash changed files from watcher' 0.17716705799102783ms
+[NX Daemon Server] - 2023-12-20T03:37:59.442Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:07.494Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:07.494Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:38:07.595Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:38:07.595Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:38:07.595Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:38:07.613Z - Time taken for 'hash changed files from watcher' 0.16529202461242676ms
+[NX Daemon Server] - 2023-12-20T03:38:07.912Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:13.491Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:38:13.491Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:13.593Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:38:13.593Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:38:13.593Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:38:13.609Z - Time taken for 'hash changed files from watcher' 0.15812498331069946ms
+[NX Daemon Server] - 2023-12-20T03:38:13.799Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:17.422Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:38:17.422Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:17.523Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:38:17.523Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:38:17.523Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:38:17.538Z - Time taken for 'hash changed files from watcher' 0.13787496089935303ms
+[NX Daemon Server] - 2023-12-20T03:38:17.742Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:40.552Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:38:40.552Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:40.653Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:38:40.653Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:38:40.653Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:38:40.672Z - Time taken for 'hash changed files from watcher' 0.20808297395706177ms
+[NX Daemon Server] - 2023-12-20T03:38:40.953Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:49.251Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:38:49.251Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:38:49.352Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:38:49.352Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:38:49.352Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:38:49.369Z - Time taken for 'hash changed files from watcher' 0.21866697072982788ms
+[NX Daemon Server] - 2023-12-20T03:38:49.549Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:39:12.379Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:39:12.379Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:39:12.481Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:39:12.481Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:39:12.481Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:39:12.499Z - Time taken for 'hash changed files from watcher' 0.1741669774055481ms
+[NX Daemon Server] - 2023-12-20T03:39:12.882Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:39:20.405Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:39:20.405Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:39:20.507Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:39:20.507Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:39:20.507Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:39:20.523Z - Time taken for 'hash changed files from watcher' 0.1381250023841858ms
+[NX Daemon Server] - 2023-12-20T03:39:20.822Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:41:38.049Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:41:38.049Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:41:38.150Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:41:38.150Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:41:38.150Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:41:38.168Z - Time taken for 'hash changed files from watcher' 0.16112500429153442ms
+[NX Daemon Server] - 2023-12-20T03:41:38.567Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:41:49.257Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:41:49.257Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:41:49.359Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:41:49.359Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:41:49.359Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:41:49.377Z - Time taken for 'hash changed files from watcher' 0.1397089958190918ms
+[NX Daemon Server] - 2023-12-20T03:41:49.659Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:45:33.635Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:45:33.635Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:45:33.736Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:45:33.736Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:45:33.736Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:45:33.751Z - Time taken for 'hash changed files from watcher' 0.18641602993011475ms
+[NX Daemon Server] - 2023-12-20T03:45:34.126Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:51:05.083Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:51:05.083Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:51:05.184Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:51:05.184Z - [REQUEST]: src/app/app.routes.ts
+[NX Daemon Server] - 2023-12-20T03:51:05.185Z - [REQUEST]: src/app/4913
+[NX Daemon Server] - 2023-12-20T03:51:05.204Z - Time taken for 'hash changed files from watcher' 0.1477920413017273ms
+[NX Daemon Server] - 2023-12-20T03:51:05.500Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:51:10.027Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:51:10.027Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:51:10.128Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:51:10.128Z - [REQUEST]: src/app/app.routes.ts
+[NX Daemon Server] - 2023-12-20T03:51:10.128Z - [REQUEST]: src/app/4913
+[NX Daemon Server] - 2023-12-20T03:51:10.145Z - Time taken for 'hash changed files from watcher' 0.12716704607009888ms
+[NX Daemon Server] - 2023-12-20T03:51:10.416Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:52:11.996Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:52:11.996Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:52:12.097Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:52:12.097Z - [REQUEST]: src/app/app.routes.ts
+[NX Daemon Server] - 2023-12-20T03:52:12.097Z - [REQUEST]: src/app/4913
+[NX Daemon Server] - 2023-12-20T03:52:12.113Z - Time taken for 'hash changed files from watcher' 0.16683298349380493ms
+[NX Daemon Server] - 2023-12-20T03:52:32.808Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:52:32.808Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:52:32.909Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:52:32.909Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:52:32.909Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:52:32.928Z - Time taken for 'hash changed files from watcher' 0.16200000047683716ms
+[NX Daemon Server] - 2023-12-20T03:53:41.305Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T03:53:41.305Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:53:41.406Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T03:53:41.406Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T03:53:41.406Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T03:53:41.423Z - Time taken for 'hash changed files from watcher' 0.17887496948242188ms
+[NX Daemon Server] - 2023-12-20T03:53:41.866Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:53:42.146Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T03:53:42.983Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:02:46.566Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:02:46.568Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:02:46.669Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:02:46.669Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:02:46.669Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:02:46.686Z - Time taken for 'hash changed files from watcher' 0.20162498950958252ms
+[NX Daemon Server] - 2023-12-20T04:02:46.979Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:03:18.299Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:03:18.299Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:03:18.400Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:03:18.400Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:03:18.400Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:03:18.418Z - Time taken for 'hash changed files from watcher' 0.24208301305770874ms
+[NX Daemon Server] - 2023-12-20T04:03:18.794Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:03:29.024Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:03:29.024Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:03:29.125Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:03:29.125Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:03:29.125Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:03:29.144Z - Time taken for 'hash changed files from watcher' 0.3376249670982361ms
+[NX Daemon Server] - 2023-12-20T04:03:29.331Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:03:42.484Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:03:42.484Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:03:42.585Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:03:42.585Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:03:42.585Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:03:42.605Z - Time taken for 'hash changed files from watcher' 0.1517919898033142ms
+[NX Daemon Server] - 2023-12-20T04:03:42.816Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:04:39.052Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:04:39.053Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:04:39.106Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:04:39.106Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:04:39.154Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:04:39.154Z - [REQUEST]: src/styles.css,src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:04:39.154Z - [REQUEST]: src/4913,src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:04:39.171Z - Time taken for 'hash changed files from watcher' 0.14300000667572021ms
+[NX Daemon Server] - 2023-12-20T04:04:39.561Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:07:26.670Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:07:26.671Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:07:26.773Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:07:26.773Z - [REQUEST]: src/styles.css
+[NX Daemon Server] - 2023-12-20T04:07:26.773Z - [REQUEST]: src/4913
+[NX Daemon Server] - 2023-12-20T04:07:26.787Z - Time taken for 'hash changed files from watcher' 0.17350000143051147ms
+[NX Daemon Server] - 2023-12-20T04:07:29.315Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:07:29.315Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:07:29.417Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:07:29.417Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:07:29.417Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:07:29.433Z - Time taken for 'hash changed files from watcher' 0.23954200744628906ms
+[NX Daemon Server] - 2023-12-20T04:07:29.651Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:07:33.227Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:07:33.227Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:07:33.329Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:07:33.329Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:07:33.329Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:07:33.341Z - Time taken for 'hash changed files from watcher' 0.14629101753234863ms
+[NX Daemon Server] - 2023-12-20T04:07:33.638Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:07:57.548Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:07:57.548Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:07:57.649Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:07:57.649Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:07:57.649Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:07:57.662Z - Time taken for 'hash changed files from watcher' 0.16620802879333496ms
+[NX Daemon Server] - 2023-12-20T04:07:58.076Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:08:04.788Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:08:04.788Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:08:04.890Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:08:04.890Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:08:04.890Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:08:04.905Z - Time taken for 'hash changed files from watcher' 0.2092079520225525ms
+[NX Daemon Server] - 2023-12-20T04:08:05.204Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:08:26.628Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:08:26.628Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:08:26.729Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:08:26.729Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:08:26.729Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:08:26.741Z - Time taken for 'hash changed files from watcher' 0.1355000138282776ms
+[NX Daemon Server] - 2023-12-20T04:08:27.180Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:08:43.578Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:08:43.578Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:08:43.679Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:08:43.679Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:08:43.679Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:08:43.697Z - Time taken for 'hash changed files from watcher' 0.16449999809265137ms
+[NX Daemon Server] - 2023-12-20T04:08:44.085Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:01.760Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:09:01.760Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:01.861Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:09:01.861Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:09:01.861Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:09:01.879Z - Time taken for 'hash changed files from watcher' 0.15495800971984863ms
+[NX Daemon Server] - 2023-12-20T04:09:02.267Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:12.302Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:12.304Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:09:12.405Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:09:12.405Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:09:12.405Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:09:12.425Z - Time taken for 'hash changed files from watcher' 0.13837498426437378ms
+[NX Daemon Server] - 2023-12-20T04:09:12.717Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:26.309Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:09:26.309Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:26.410Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:09:26.410Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:09:26.410Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:09:26.426Z - Time taken for 'hash changed files from watcher' 0.1322919726371765ms
+[NX Daemon Server] - 2023-12-20T04:09:26.739Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:42.821Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:09:42.821Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:42.923Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:09:42.923Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:09:42.923Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:09:42.941Z - Time taken for 'hash changed files from watcher' 0.16391700506210327ms
+[NX Daemon Server] - 2023-12-20T04:09:43.334Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:59.513Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:09:59.513Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:09:59.615Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:09:59.615Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:09:59.615Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:09:59.632Z - Time taken for 'hash changed files from watcher' 0.20866602659225464ms
+[NX Daemon Server] - 2023-12-20T04:09:59.973Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:11:09.772Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:11:09.772Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:11:09.873Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:11:09.874Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:11:09.874Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:11:09.891Z - Time taken for 'hash changed files from watcher' 0.21391701698303223ms
+[NX Daemon Server] - 2023-12-20T04:11:10.301Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:12:06.456Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:12:06.457Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:12:06.557Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:12:06.557Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:12:06.557Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:12:06.572Z - Time taken for 'hash changed files from watcher' 0.140749990940094ms
+[NX Daemon Server] - 2023-12-20T04:12:06.867Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:12:21.030Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:12:21.030Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:12:21.131Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:12:21.131Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:12:21.131Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:12:21.148Z - Time taken for 'hash changed files from watcher' 0.12995898723602295ms
+[NX Daemon Server] - 2023-12-20T04:12:21.370Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:12:59.338Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:12:59.338Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:12:59.439Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:12:59.439Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:12:59.439Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:12:59.453Z - Time taken for 'hash changed files from watcher' 0.11533302068710327ms
+[NX Daemon Server] - 2023-12-20T04:12:59.841Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:13:19.411Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:13:19.411Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:13:19.513Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:13:19.513Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:13:19.513Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:13:19.530Z - Time taken for 'hash changed files from watcher' 0.15675002336502075ms
+[NX Daemon Server] - 2023-12-20T04:13:19.921Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:13:29.751Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:13:29.751Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:13:29.852Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:13:29.852Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:13:29.852Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:13:29.867Z - Time taken for 'hash changed files from watcher' 0.109375ms
+[NX Daemon Server] - 2023-12-20T04:13:30.168Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:13:40.259Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:13:40.259Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:13:40.360Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:13:40.360Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:13:40.360Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:13:40.375Z - Time taken for 'hash changed files from watcher' 0.16166704893112183ms
+[NX Daemon Server] - 2023-12-20T04:13:40.588Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:13:56.303Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:13:56.304Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:13:56.405Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:13:56.405Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:13:56.405Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:13:56.419Z - Time taken for 'hash changed files from watcher' 0.11100000143051147ms
+[NX Daemon Server] - 2023-12-20T04:13:56.822Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:14:13.067Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:14:13.067Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:14:13.169Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:14:13.169Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:14:13.169Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:14:13.184Z - Time taken for 'hash changed files from watcher' 0.11054199934005737ms
+[NX Daemon Server] - 2023-12-20T04:14:13.569Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:14:17.308Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:14:17.308Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:14:17.409Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:14:17.409Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:14:17.409Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:14:17.423Z - Time taken for 'hash changed files from watcher' 0.1677919626235962ms
+[NX Daemon Server] - 2023-12-20T04:14:17.716Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:14:19.284Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:14:19.285Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:14:19.386Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:14:19.386Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:14:19.386Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:14:19.399Z - Time taken for 'hash changed files from watcher' 0.09966695308685303ms
+[NX Daemon Server] - 2023-12-20T04:14:19.647Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:14:43.810Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:14:43.810Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:14:43.912Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:14:43.912Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:14:43.912Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:14:43.926Z - Time taken for 'hash changed files from watcher' 0.11387503147125244ms
+[NX Daemon Server] - 2023-12-20T04:14:44.306Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:15:18.439Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:15:18.439Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:15:18.540Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:15:18.540Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:15:18.540Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:15:18.555Z - Time taken for 'hash changed files from watcher' 0.12770801782608032ms
+[NX Daemon Server] - 2023-12-20T04:15:18.942Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:15:33.243Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:15:33.244Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:15:33.345Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:15:33.345Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:15:33.345Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:15:33.360Z - Time taken for 'hash changed files from watcher' 0.15162497758865356ms
+[NX Daemon Server] - 2023-12-20T04:15:33.639Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:15:40.343Z - [WATCHER]: 1 file(s) created or restored, 0 file(s) modified, 1 file(s) deleted
+[NX Daemon Server] - 2023-12-20T04:15:40.343Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:15:40.444Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2023-12-20T04:15:40.444Z - [REQUEST]: src/app/defer-usecases/use-case-container.ts
+[NX Daemon Server] - 2023-12-20T04:15:40.444Z - [REQUEST]: src/app/defer-usecases/4913
+[NX Daemon Server] - 2023-12-20T04:15:40.464Z - Time taken for 'hash changed files from watcher' 0.10449999570846558ms
+[NX Daemon Server] - 2023-12-20T04:15:40.645Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:31:18.294Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:31:18.295Z - [WATCHER]: package.json was modified
+[NX Daemon Server] - 2023-12-20T04:31:18.444Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2023-12-20T04:31:18.450Z - [WATCHER]: Stopping the watcher for /Users/chautran/code/github/nartc/angular-defer (sources)
+[NX Daemon Server] - 2023-12-20T04:31:18.450Z - [WATCHER]: Stopping the watcher for /Users/chautran/code/github/nartc/angular-defer (outputs)
+[NX Daemon Server] - 2023-12-20T04:31:18.450Z - Server stopped because: "Lock file changed"

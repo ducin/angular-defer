@@ -1,71 +1,123 @@
 import { Routes } from '@angular/router';
 import { AboutComponent } from './about.component';
-import { DeferWhenConditionComponent } from './defer-usecases/defer-when-condition';
-import { DeferOnIdleComponent } from './defer-usecases/defer-on-idle';
-import { DeferOnViewportComponent } from './defer-usecases/defer-on-viewport';
-import { DeferOnInteractionComponent } from './defer-usecases/defer-on-interaction';
-import { DeferOnHoverComponent } from './defer-usecases/defer-on-hover';
-import { DeferOnTimerComponent } from './defer-usecases/defer-on-timer';
-import { DeferOnImmediateComponent } from './defer-usecases/defer-on-immediate';
-import { DeferNestedComponent } from './defer-usecases/defer-nested';
-import { DeferLoadingVsPlaceholderComponent } from './defer-usecases/defer-loading-vs-placeholder';
-import { DeferErrorComponent } from './defer-usecases/defer-error';
-import { DeferPrefetchComponent } from './defer-usecases/defer-prefetch';
 import { DeferGuideComponent } from './defer-guide.component';
-import { DeferMultipleComponent } from './defer-usecases/defer-multiple';
-import { DeferNPMPackageComponent } from './defer-usecases/defer-npm-package';
-import { DeferAccordionComponent } from './defer-usecases/defer-accordion';
 
-export const routes: Routes = [{
-  path: 'about',
-  component: AboutComponent,
-}, {
-  path: 'defer-when-condition',
-  component: DeferWhenConditionComponent,
-}, {
-  path: 'defer-on-idle',
-  component: DeferOnIdleComponent,
-}, {
-  path: 'defer-on-viewport',
-  component: DeferOnViewportComponent,
-}, {
-  path: 'defer-on-interaction',
-  component: DeferOnInteractionComponent,
-}, {
-  path: 'defer-on-hover',
-  component: DeferOnHoverComponent,
-}, {
-  path: 'defer-on-immediate',
-  component: DeferOnImmediateComponent,
-}, {
-  path: 'defer-on-timer',
-  component: DeferOnTimerComponent,
-}, {
-  path: 'defer-accordion',
-  component: DeferAccordionComponent,
-}, {
-  path: 'defer-multiple',
-  component: DeferMultipleComponent,
-}, {
-  path: 'defer-npm-package',
-  component: DeferNPMPackageComponent,
-}, {
-  path: 'defer-nested',
-  component: DeferNestedComponent,
-}, {
-  path: 'defer-prefetch',
-  component: DeferPrefetchComponent,
-}, {
-  path: 'defer-error',
-  component: DeferErrorComponent,
-}, {
-  path: 'defer-loading-vs-placeholder',
-  component: DeferLoadingVsPlaceholderComponent,
-}, {
-  path: 'defer-guide',
-  component: DeferGuideComponent,
-}, {
-  path: '',
-  redirectTo: 'about',
-  pathMatch: 'full'
-}];
+export const routes: Routes = [
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'defer-guide',
+    component: DeferGuideComponent,
+  },
+  {
+    path: '',
+    redirectTo: 'about',
+    pathMatch: 'full',
+  },
+  {
+    path: '',
+    loadComponent: () => import('./defer-usecases/use-case-container'),
+    children: [
+      {
+        path: 'defer-when-condition',
+        loadComponent: () =>
+          import('./defer-usecases/defer-when-condition').then(
+            (m) => m.DeferWhenConditionComponent,
+          ),
+      },
+      {
+        path: 'defer-on-idle',
+        loadComponent: () =>
+          import('./defer-usecases/defer-on-idle').then(
+            (m) => m.DeferOnIdleComponent,
+          ),
+      },
+      {
+        path: 'defer-on-viewport',
+        loadComponent: () =>
+          import('./defer-usecases/defer-on-viewport').then(
+            (m) => m.DeferOnViewportComponent,
+          ),
+      },
+      {
+        path: 'defer-on-interaction',
+        loadComponent: () =>
+          import('./defer-usecases/defer-on-interaction').then(
+            (m) => m.DeferOnInteractionComponent,
+          ),
+      },
+      {
+        path: 'defer-on-hover',
+        loadComponent: () =>
+          import('./defer-usecases/defer-on-hover').then(
+            (m) => m.DeferOnHoverComponent,
+          ),
+      },
+      {
+        path: 'defer-on-immediate',
+        loadComponent: () =>
+          import('./defer-usecases/defer-on-immediate').then(
+            (m) => m.DeferOnImmediateComponent,
+          ),
+      },
+      {
+        path: 'defer-on-timer',
+        loadComponent: () =>
+          import('./defer-usecases/defer-on-timer').then(
+            (m) => m.DeferOnTimerComponent,
+          ),
+      },
+      {
+        path: 'defer-accordion',
+        loadComponent: () =>
+          import('./defer-usecases/defer-accordion').then(
+            (m) => m.DeferAccordionComponent,
+          ),
+      },
+      {
+        path: 'defer-multiple',
+        loadComponent: () =>
+          import('./defer-usecases/defer-multiple').then(
+            (m) => m.DeferMultipleComponent,
+          ),
+      },
+      {
+        path: 'defer-npm-package',
+        loadComponent: () =>
+          import('./defer-usecases/defer-npm-package').then(
+            (m) => m.DeferNPMPackageComponent,
+          ),
+      },
+      {
+        path: 'defer-nested',
+        loadComponent: () =>
+          import('./defer-usecases/defer-nested').then(
+            (m) => m.DeferNestedComponent,
+          ),
+      },
+      {
+        path: 'defer-prefetch',
+        loadComponent: () =>
+          import('./defer-usecases/defer-prefetch').then(
+            (m) => m.DeferPrefetchComponent,
+          ),
+      },
+      {
+        path: 'defer-error',
+        loadComponent: () =>
+          import('./defer-usecases/defer-error').then(
+            (m) => m.DeferErrorComponent,
+          ),
+      },
+      {
+        path: 'defer-loading-vs-placeholder',
+        loadComponent: () =>
+          import('./defer-usecases/defer-loading-vs-placeholder').then(
+            (m) => m.DeferLoadingVsPlaceholderComponent,
+          ),
+      },
+    ],
+  },
+];

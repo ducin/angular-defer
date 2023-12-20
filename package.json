@@ -41,7 +41,9 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "markdown-it": "^14.0.0",
     "nx": "17.2.6",
+    "shiki": "^0.14.7",
     "typescript": "~5.2.2"
   }
 }
