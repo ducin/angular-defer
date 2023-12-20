@@ -1,11 +1,13 @@
-import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import {
-  ActivatedRoute,
-  NavigationEnd,
-  Router,
-  RouterOutlet,
-} from '@angular/router';
-import { filter } from 'rxjs';
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  signal,
+} from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { filter, switchMap } from 'rxjs';
+import { SnippetDialogContent } from '../ui-snippet-dialog-content/ui-snippet-dialog-content';
 
 @Component({
   standalone: true,
@@ -47,9 +49,14 @@ import { filter } from 'rxjs';
           />
         </svg>
       </button>
+      @defer (on viewport(codeDialog)) {
+        <app-snippet-dialog-content />
+      } @loading (after 60ms; minimum 500ms) {
+        <p>Loading snippets...</p>
+      }
     </dialog>
   `,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, SnippetDialogContent],
   styles: `
     button {
       cursor: pointer;
@@ -81,6 +88,7 @@ import { filter } from 'rxjs';
 
     dialog {
       position: relative;
+      overflow: clip;
 
       height: 80%;
       width: 80%;
@@ -89,6 +97,11 @@ import { filter } from 'rxjs';
       background-color: var(--main-background-color);
       border: 1px solid var(--main-accent-color);
       box-shadow: 3px 3px 5px var(--main-accent-color);
+    }
+
+    dialog:has([open]) {
+      display: flex;
+      flex-direction: column;
     }
 
     dialog button {
@@ -109,16 +122,4 @@ import { filter } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: { class: 'use-case-container' },
 })
-export default class UseCaseContainer {
-  #router = inject(Router);
-
-  constructor() {
-    this.#router.events
-      .pipe(filter((ev): ev is NavigationEnd => ev instanceof NavigationEnd))
-      .subscribe(console.log);
-  }
-
-  onToggleDialog(dialogElement: HTMLDialogElement) {
-    dialogElement.showModal();
-  }
-}
+export default class UseCaseContainer {}

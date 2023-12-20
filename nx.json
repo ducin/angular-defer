@@ -2,20 +2,16 @@
   "targetDefaults": {
     "build": {
       "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production"
-      ]
+      "dependsOn": ["build-snippets", "^build"],
+      "inputs": ["production", "^production"]
+    },
+    "build-snippets": {
+      "cache": true,
+      "inputs": ["{projectRoot}/src/app/defer-usecases/**/*"]
     },
     "test": {
       "cache": true,
-      "inputs": [
-        "default",
-        "^production"
-      ]
+      "inputs": ["default", "^production"]
     }
   },
   "affected": {
@@ -23,10 +19,7 @@
   },
   "namedInputs": {
     "sharedGlobals": [],
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
       "!{projectRoot}/tsconfig.spec.json",

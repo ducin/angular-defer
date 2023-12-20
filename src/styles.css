@@ -19,6 +19,11 @@
       white
     );
   }
+
+  /* the theme name */
+  .shiki.dark-plus {
+    display: none;
+  }
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -40,6 +45,11 @@
       var(--electric-violet) 60%,
       black
     );
+  }
+
+  /* the theme name */
+  .shiki.light-plus {
+    display: none;
   }
 }
 
@@ -70,7 +80,7 @@ body {
   box-shadow: 3px 3px 5px var(--main-accent-color);
 }
 
-code {
+code:not(:has(span)) {
   margin-bottom: 20px;
   font-weight: 700;
   background: -webkit-linear-gradient(

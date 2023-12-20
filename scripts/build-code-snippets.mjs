@@ -1,8 +1,8 @@
 import { getHighlighter } from "shiki";
 import markdown from "markdown-it";
-import { readFile, readdir, writeFile } from "node:fs/promises";
+import { readFile, readdir, writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
-import { writeFileSync } from "node:fs";
+import { existsSync } from "node:fs";
 
 const templatePropertyRegex = /template\s*:\s*`((?:[^`\\]|\\.|\n)*)`/;
 const templateUrlReplacement = "templateUrl: 'component.html'";
@@ -78,11 +78,19 @@ for (const [filePath, name] of useCaseFiles) {
   ];
   const useCaseAssetRoot = join(assetsRoot, name, "/");
 
+  if (!existsSync(useCaseAssetRoot)) {
+    await mkdir(useCaseAssetRoot);
+  }
+
   await Promise.all([
-    writeFile(join(useCaseAssetRoot, "light-ts.html"), lightTsOut),
-    writeFile(join(useCaseAssetRoot, "light-html.html"), lightHtmlOut),
-    writeFile(join(useCaseAssetRoot, "dark-ts.html"), darkTsOut),
-    writeFile(join(useCaseAssetRoot, "dark-html.html"), darkHtmlOut),
+    writeFile(
+      join(useCaseAssetRoot, "ts.html"),
+      lightTsOut.concat("\n", darkTsOut),
+    ),
+    writeFile(
+      join(useCaseAssetRoot, "html.html"),
+      lightHtmlOut.concat("\n", darkHtmlOut),
+    ),
   ]);
 }
 
