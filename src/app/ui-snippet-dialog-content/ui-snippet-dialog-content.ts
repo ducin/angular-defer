@@ -1,7 +1,6 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  effect,
   inject,
   signal,
 } from '@angular/core';
@@ -14,18 +13,14 @@ function injectSnippets() {
 
   const snippets = signal({ tsHtml: '', htmlHtml: '' });
 
-  effect(() => {
-    Promise.all([
-      fetch(`/assets/snippets${router.url}/ts.html`).then((res) => res.text()),
-      fetch(`/assets/snippets${router.url}/html.html`).then((res) =>
-        res.text(),
-      ),
-    ]).then(([tsHtml, htmlHtml]) => {
-      // NOTE: we generate these files so they're safe
-      snippets.set({
-        tsHtml: sanitizer.bypassSecurityTrustHtml(tsHtml) as string,
-        htmlHtml: sanitizer.bypassSecurityTrustHtml(htmlHtml) as string,
-      });
+  Promise.all([
+    fetch(`/assets/snippets${router.url}/ts.html`).then((res) => res.text()),
+    fetch(`/assets/snippets${router.url}/html.html`).then((res) => res.text()),
+  ]).then(([tsHtml, htmlHtml]) => {
+    // NOTE: we generate these files so they're safe
+    snippets.set({
+      tsHtml: sanitizer.bypassSecurityTrustHtml(tsHtml) as string,
+      htmlHtml: sanitizer.bypassSecurityTrustHtml(htmlHtml) as string,
     });
   });
 
