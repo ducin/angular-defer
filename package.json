@@ -8,7 +8,7 @@
     "ng": "ng",
     "start": "nx serve",
     "build": "nx build",
-    "build-pages": "rm -rf docs && nx build --output-path docs --base-href /angular-defer/ && mv docs/browser/* docs && cp docs/index.html docs/404.html && rm -rf docs/browser",
+    "build-pages": "rm -rf docs && nx build && mv docs/browser/* docs && cp docs/index.html docs/404.html && rm -rf docs/browser",
     "watch": "nx build --watch --configuration development",
     "test": "nx test"
   },
