@@ -42,4 +42,5 @@ testem.log
 Thumbs.db
 
 src/assets/snippets/**/*
+!src/assets/snippets/.gitkeep
 .nx/cache
