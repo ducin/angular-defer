@@ -3,13 +3,26 @@
     --background-color: #ffffff;
     --text-color: #000000;
     --angle: 90deg;
-    --orange-red: oklch(63.32% .24 31.68);
-    --vivid-pink: oklch(69.02% .277 332.77);
-    --electric-violet: oklch(53.18% .28 296.97);
+    --orange-red: oklch(63.32% 0.24 31.68);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --electric-violet: oklch(53.18% 0.28 296.97);
 
     --main-accent-color: var(--electric-violet);
-    --main-background-color: color-mix(in srgb, var(--electric-violet) 10%, white);
-    --secondary-background-color: color-mix(in srgb, var(--electric-violet) 30%, white);
+    --main-background-color: color-mix(
+      in srgb,
+      var(--electric-violet) 10%,
+      white
+    );
+    --secondary-background-color: color-mix(
+      in srgb,
+      var(--electric-violet) 30%,
+      white
+    );
+  }
+
+  /* the theme name */
+  .shiki.dark-plus {
+    display: none;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -17,13 +30,26 @@
     --background-color: #000000;
     --text-color: #ffffff;
     --angle: 90deg;
-    --orange-red: oklch(63.32% .24 31.68);
-    --vivid-pink: oklch(69.02% .277 332.77);
-    --electric-violet: oklch(53.18% .28 296.97);
+    --orange-red: oklch(63.32% 0.24 31.68);
+    --vivid-pink: oklch(69.02% 0.277 332.77);
+    --electric-violet: oklch(53.18% 0.28 296.97);
 
     --main-accent-color: var(--vivid-pink);
-    --main-background-color: color-mix(in srgb, var(--electric-violet) 30%, black);
-    --secondary-background-color: color-mix(in srgb, var(--electric-violet) 60%, black);
+    --main-background-color: color-mix(
+      in srgb,
+      var(--electric-violet) 30%,
+      black
+    );
+    --secondary-background-color: color-mix(
+      in srgb,
+      var(--electric-violet) 60%,
+      black
+    );
+  }
+
+  /* the theme name */
+  .shiki.light-plus {
+    display: none;
   }
 }
 
@@ -37,7 +63,12 @@ body {
 }
 
 .angular-gradient {
-  background: -webkit-linear-gradient(var(--angle),var(--orange-red) 0%,var(--vivid-pink) 50%,var(--electric-violet) 100%);
+  background: -webkit-linear-gradient(
+    var(--angle),
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
 }
 
 .box {
@@ -49,10 +80,15 @@ body {
   box-shadow: 3px 3px 5px var(--main-accent-color);
 }
 
-code {
+code:not(:has(span)) {
   margin-bottom: 20px;
   font-weight: 700;
-  background: -webkit-linear-gradient(var(--angle),var(--orange-red) 0%,var(--vivid-pink) 50%,var(--electric-violet) 100%);
+  background: -webkit-linear-gradient(
+    var(--angle),
+    var(--orange-red) 0%,
+    var(--vivid-pink) 50%,
+    var(--electric-violet) 100%
+  );
 
   -webkit-background-clip: text;
   -moz-background-clip: text;

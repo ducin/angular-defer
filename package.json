@@ -5,11 +5,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "build-pages": "rm -rf docs && ng build --output-path docs --base-href /angular-defer/ && mv docs/browser/* docs && cp docs/index.html docs/404.html && rm -rf docs/browser",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "start": "nx serve",
+    "build": "nx build",
+    "build-pages": "rm -rf docs && nx build --output-path docs --base-href /angular-defer/ && mv docs/browser/* docs && cp docs/index.html docs/404.html && rm -rf docs/browser",
+    "watch": "nx build --watch --configuration development",
+    "test": "nx test"
   },
   "dependencies": {
     "@angular/animations": "^17.0.0",
@@ -27,8 +27,13 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.7",
+    "@angular-devkit/core": "^17.0.7",
+    "@angular-devkit/schematics": "^17.0.7",
     "@angular/cli": "^17.0.7",
     "@angular/compiler-cli": "^17.0.0",
+    "@nx/angular": "17.2.6",
+    "@nx/workspace": "17.2.6",
+    "@schematics/angular": "^17.0.7",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
@@ -36,6 +41,9 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "markdown-it": "^14.0.0",
+    "nx": "17.2.6",
+    "shiki": "^0.14.7",
     "typescript": "~5.2.2"
   }
 }
