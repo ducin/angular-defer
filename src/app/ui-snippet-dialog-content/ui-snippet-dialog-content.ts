@@ -14,8 +14,8 @@ function injectSnippets() {
   const snippets = signal({ tsHtml: '', htmlHtml: '' });
 
   Promise.all([
-    fetch(`/assets/snippets${router.url}/ts.html`).then((res) => res.text()),
-    fetch(`/assets/snippets${router.url}/html.html`).then((res) => res.text()),
+    fetch(`/angular-defer/assets/snippets${router.url}/ts.html`).then((res) => res.text()),
+    fetch(`/angular-defer/assets/snippets${router.url}/html.html`).then((res) => res.text()),
   ]).then(([tsHtml, htmlHtml]) => {
     // NOTE: we generate these files so they're safe
     snippets.set({
