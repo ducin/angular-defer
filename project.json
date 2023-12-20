@@ -20,6 +20,8 @@
       },
       "configurations": {
         "production": {
+          "outputPath": "docs",
+          "baseHref": "/angular-defer/",
           "budgets": [
             {
               "type": "initial",
